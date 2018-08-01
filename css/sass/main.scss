@@ -294,11 +294,8 @@ ul li {
 #logo svg {
     transition: margin 500ms;
 }
-.template-product #logo-text, .template-collection #logo-text, .template-cart #logo-text{
+#hidden-nav {
     display: none;
-}
-.template-product #logo-svg, .template-collection #logo-svg,  .template-cart #logo-svg {
-    margin-top: -130px;
 }
 /* --------------- PRODUCTS ------------------- */
 /* ---- PRODUCT GRID ---- */

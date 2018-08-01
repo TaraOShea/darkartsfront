@@ -9,7 +9,7 @@ gs.logoScrollResize = function(){
     gs.stick = gs.logo.offsetHeight + gs.logo.offsetTop;
     gs.maxScrollDistance = gs.header.offsetHeight/2;
     
-    gs.widthAtMax = 250;
+    gs.widthAtMax = 160;
     gs.widthDiff = gs.logoW - gs.widthAtMax;
     gs.pixelsPerScroll = (gs.widthDiff / gs.maxScrollDistance);
 
@@ -17,7 +17,6 @@ gs.logoScrollResize = function(){
         gs.content.style.paddingTop = gs.header.offsetHeight +"px";  
     }
 }
-
 
 gs.stickyMenu = function() {
     if(document.getElementsByClassName("home").length > 0){
@@ -33,7 +32,7 @@ gs.stickyMenu = function() {
         } 
 
         if(gs.logo.offsetWidth <= gs.widthAtMax + 10) {
-            gs.logosvg.style.marginTop = "-130px";
+            gs.logosvg.style.marginTop = "-50px";
             gs.logotxt.style.display = "none";
         } else {
             gs.logosvg.style.marginTop = "0px";
