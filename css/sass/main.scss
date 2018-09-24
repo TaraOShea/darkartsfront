@@ -46,7 +46,7 @@ html, body {
 }
 
 body {
-    font: 110% $font-stack;
+    font: 16px $font-stack;
 	font-weight: $font-regular;
 	line-height: 1.5;
     color: $primary-color;
@@ -210,6 +210,7 @@ ul li {
     background: $greythree;
 }
 .vid-block {
+    position: relative;
     height: 0;
     padding-bottom: 34.6%;
     background-image: url('../assets/imgs/video.png');
@@ -240,7 +241,7 @@ ul li {
     transform-origin: center center;
     transition: transform 500ms, -webkit-filter 500ms;
 }
-.txt-block a:hover::before{
+.txt-block a:hover::before, .txt-block a:focus::before{
     transform: scaleX(0);
     transform-origin: center center;
     transition: transform 500ms, -webkit-filter 500ms;
@@ -363,6 +364,155 @@ ul li {
     vertical-align: top;
     vertical-align: middle;
 }
+.visually-hidden, .icon__fallback-text {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+.btn--clear {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    color: #4a4a4a;
+    transition: 0.15s opacity ease-out;
+}
+
+/* --------------- VIDEO BUTTON ------------------- */
+.vid-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.video-section__load-player-button {
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+.video-section__load-player-button:hover{
+    opacity:1;
+    -ms-transform:scale(1.1);
+    -webkit-transform:scale(1.1); transform:scale(1.1)
+}
+.video-section__load-player-button-triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 15px solid #fff;
+    border-bottom: 8px solid transparent;
+    -ms-transform: translate(-42%, -50%);
+    -webkit-transform: translate(-42%, -50%);
+    transform: translate(-42%, -50%);
+}
+
+.video-section__load-player-button-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #fff;
+    height: 70px;
+    width: 70px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.video-section__load-player-button.animated.pulse{
+    outline:none;
+    -ms-animation-name:pulse;
+    -webkit-animation-name:pulse;
+    animation-name:pulse;
+    -ms-animation-duration:1s;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -ms-animation-fill-mode:both;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-iteration-count:infinite
+}
+    
+.video-section__load-player-button.animated .video-section__load-player-button-circle{
+    position:absolute;
+    top: -4px;
+    left: -4px;
+    border: 4px double #fff;
+    -ms-animation-name:spin;
+    -webkit-animation-name:spin;
+    -moz-animation-name:spin;
+    animation-name:spin;-ms-animation-duration:4s;
+    -webkit-animation-duration:4s;
+    -moz-animation-duration:4s;
+    animation-duration:4s;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
+    -ms-animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -ms-animation-fill-mode:both;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    animation-fill-mode:both
+}
+@-webkit-keyframes spin{
+    from{
+        -ms-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        transform:rotate(0deg)
+        } to {
+        -ms-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        transform:rotate(360deg)
+        }
+    }
+@keyframes spin{
+    from{
+        -ms-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        transform:rotate(0deg)
+        } to {
+        -ms-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        transform:rotate(360deg)
+        }
+    }
+
+@-webkit-keyframes pulse{
+    0%{-webkit-transform:scale(1);transform:scale(1)}
+    50%{-webkit-transform:scale(1.1);transform:scale(1.1)}
+    100%{-webkit-transform:scale(1);transform:scale(1)}
+}
+@keyframes pulse{
+    0%{-webkit-transform:scale(1);transform:scale(1)}
+    50%{-webkit-transform:scale(1.1);transform:scale(1.1)}
+    100%{-webkit-transform:scale(1);transform:scale(1)}
+}
 .inview {
 //   animation: fade-in 1s;
 }
@@ -381,7 +531,7 @@ ul li {
     z-index: 10;
     background: transparent;
 }
-#header.alt {
+#header.alt, .template-product #header{
     background: $primary-color;
 }
 #header ul li {
@@ -411,6 +561,13 @@ ul li {
 #logo #logo-sml {
     fill: #000;
     display: none;
+}
+.template-product #logo #logo-sml { 
+    display: block;
+}
+.template-product #logo { 
+    max-width: 250px;
+    height: 90px;
 }
 .nav-trigger {
     position: fixed;
@@ -595,6 +752,7 @@ ul li {
     content: '';
     background-image: url('https://static1.squarespace.com/static/5693a9207086d7242736259c/t/5693b1faa128e6b30eb606f5/1452519934351/DarkArtsBirthday-32.jpg?format=2500w');
     background-size: cover;   
+    background-position: top center;
     opacity: 0.2; 
     transform: scale(1);
     -webkit-animation-name: fade-in;
@@ -672,7 +830,7 @@ ul li {
 .product-image img {
     transition: all 0.15s ease-in;
 }
-.product-image:hover img {
+.product-image:hover img, .product-image:focus img {
     transition: all 0.25s ease-in;
     transform: scale(1.05);
 }

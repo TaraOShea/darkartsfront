@@ -1,18 +1,20 @@
 //http://jsfiddle.net/woun56vk/203/
 gs.logoScrollResize = function(){
-    gs.logoH = window.innerHeight;
-    gs.logoW = Math.floor(gs.logo.offsetWidth);
-    gs.heightAtMax = 90;
-    gs.widthAtMax = 100;
+    if(document.getElementsByClassName("home").length > 0){
+        gs.logoH = window.innerHeight;
+        gs.logoW = Math.floor(gs.logo.offsetWidth);
+        gs.heightAtMax = 90;
+        gs.widthAtMax = 100;
 
-    gs.stick = gs.logo.offsetHeight + gs.logo.offsetTop;
-    gs.maxScrollDistance = gs.intro.offsetHeight - gs.widthAtMax;
-    
-    gs.widthDiff = gs.logoW - gs.widthAtMax;
-    gs.pixelsPerScroll = (gs.widthDiff / gs.maxScrollDistance);
+        gs.stick = gs.logo.offsetHeight + gs.logo.offsetTop;
+        gs.maxScrollDistance = gs.intro.offsetHeight - gs.widthAtMax;
+        
+        gs.widthDiff = gs.logoW - gs.widthAtMax;
+        gs.pixelsPerScroll = (gs.widthDiff / gs.maxScrollDistance);
 
-    gs.heightDiff = gs.logoH - gs.heightAtMax;
-    gs.heightPixelsPerScroll = (gs.heightDiff / gs.maxScrollDistance);
+        gs.heightDiff = gs.logoH - gs.heightAtMax;
+        gs.heightPixelsPerScroll = (gs.heightDiff / gs.maxScrollDistance);
+    }
 }
 
 gs.stickyMenu = function() {

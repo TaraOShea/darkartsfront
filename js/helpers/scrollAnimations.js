@@ -1,4 +1,4 @@
-gs.animateHTML = function() {
+gs.animateOnScroll = function() {
     var elems;
     var windowHeight;
     function init() {
@@ -26,4 +26,4 @@ gs.animateHTML = function() {
       init: init
     };
   };
-  gs.animateHTML().init();
+  gs.animateOnScroll().init();
