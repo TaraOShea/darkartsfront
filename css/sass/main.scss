@@ -1,4 +1,4 @@
-$font-stack: 'hk_groteskbold', Helvetica, Arial, sans-serif;
+$font-stack: 'radikalregular', Helvetica, Arial, sans-serif;
 $font-regular: 400;
 $font-bold: 700;
 
@@ -9,7 +9,6 @@ $greytwo: #3c3c3b;
 $greythree: #9d9d9c;
 $background-color: #FFF;
 $link-color: #000;
-
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -248,6 +247,7 @@ ul li {
 }
 .content {
     max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
     overflow: hidden;
     font-weight: $font-bold;
@@ -809,6 +809,16 @@ footer .sub-footer {
         padding-bottom: 56.5%;
     }
 
+    .news-item {
+        width: 96%;
+        margin: 2%;
+    }
+    .instagram-item {
+        width: 96%;
+        margin: 2%;
+        padding-bottom: 96%;
+    }
+
     .cart-content, .cart__footer {
         width: 100%;
         padding: 0;
@@ -830,15 +840,6 @@ footer .sub-footer {
 @media screen and (max-width: 620px) {
     #header ul li {
         font-size: 6vw;
-    }
-    .news-item {
-        width: 96%;
-        margin: 2%;
-    }
-    .instagram-item {
-        width: 96%;
-        margin: 2%;
-        padding-bottom: 96%;
     }
 }
 
@@ -873,3 +874,12 @@ footer .sub-footer {
 //     font-style: normal;
 
 // }
+
+@font-face {
+    font-family: 'radikalregular';
+    src: url('/assets/fonts/nootype_-_radikal-webfont.woff2') format('woff2'),
+         url('/assets/fonts/nootype_-_radikal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
