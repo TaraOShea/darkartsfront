@@ -386,11 +386,11 @@ ul li {
 #header ul li {
     padding: 0 2%;
     margin: 1% 2%;
-    font-size: 2vw;
+    font-size: 3.5vw;
     display: block;
 }
 .template-index #logo {
-    max-width: 550px;
+    max-width: 450px;
     margin: 0 auto;
 }
 #logo {
@@ -550,13 +550,17 @@ ul li {
     z-index: 20;
     transition: all 0.25s ease-out;
 }
-
+#hidden-nav .menu {
+    padding: 70px 20px 20px 20px;
+}
 #hidden-nav .menu-item {
     opacity: 0;
+    transform: translateY(20px);
     transition: all 0.25s ease-out;
 }
 #hidden-nav .menu-item.active {
     opacity: 1;
+    transform: translateY(0px);
     transition: all 0.25s ease-out;
 }
 #logo-nav {
@@ -795,9 +799,16 @@ footer .sub-footer {
 
 /* --------------- MEDIA QUIRIES ------------------- */
 @media screen and (max-width: 920px) {
-    .product {
-        width: 50%;
+    .col50 {
+        width: 100%;
     }
+    .table, .table-cell {
+        display: block;
+    }
+    .vid-block {
+        padding-bottom: 56.5%;
+    }
+
     .cart-content, .cart__footer {
         width: 100%;
         padding: 0;
@@ -817,21 +828,27 @@ footer .sub-footer {
 }
 
 @media screen and (max-width: 620px) {
-    .product {
-        width: 100%;
+    #header ul li {
+        font-size: 6vw;
     }
-    .product .product-image {
-        padding-bottom: 101%;
+    .news-item {
+        width: 96%;
+        margin: 2%;
     }
-    .pointer {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        width: 80px;
+    .instagram-item {
+        width: 96%;
+        margin: 2%;
+        padding-bottom: 96%;
     }
 }
 
 @media screen and (max-width: 520px) {
+    .nav-trigger {
+        left: 3%;
+    }
+    .product {
+        width: 100%;
+    }
     .cart-item {
         width: 60%;
         margin: 0 auto;
