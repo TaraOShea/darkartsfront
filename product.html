@@ -43,16 +43,16 @@
 
     <!-- SITE CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css?_cacheOverride=1530702435512">
     <!--[if lt IE 9]>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
 <body class="template-product">
-
-	<header id="header">
+	<header id="header" class="alt">
 		<div class="content txt-center txt-upper">
             <h1 id="logo">
+                <a href="/">
                     <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 319.5">
                         <g id="logo-icon">
                             <g id="demon">
@@ -577,7 +577,7 @@
                             </g>
                         </g>
                     </svg>
-
+                </a>
             </h1>
             <div class="nav-trigger">
                 <div id="nav-btn">
@@ -723,49 +723,57 @@
 		</div>
     </header>
 
-    <div id="content" class="padding-top">
-        <div class="content pb60">
-            <div class="product">
-                <div class="product-images">
-                    <div class="product-image"></div>
-                    <div class="product-image"></div>
+    <div id="content" class="margin-top">
+        <div class="content hidden">
+            <div class="block">
+                <div class="sub-title txt-center">
+                    <h2 class="notch-title">Shop</h2>
                 </div>
-                <div class="product-content">
-                    <div class="product-content-inner p40">
-                        <h2 class="product-title">This is a title</h2>
-                        <p>This is a description of the product</p>
-                        <div class="product-title product-price">£6.66</div>
-                        <div class="product-title">
-                            Select a size
+                <div class="products">
+                    <div class="product-images">
+                        <div class="product-image">
+                            <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
                         </div>
-                        <div class="product-varients">
-                            <ul>
-                                <li>
-                                    <input type="radio" id="s-option" name="selector">
-                                    <label for="s-option">S</label>
-                                    <!-- <div class="check"></div> -->
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" id="m-option" name="selector">
-                                    <label for="m-option">M</label>
-                                    <!-- <div class="check"></div> -->
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" id="l-option" name="selector">
-                                    <label for="l-option">L</label>
-                                    <!-- <div class="check"></div> -->
-                                </li>
-                            </ul>
+                        <div class="product-image">
+                            <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
                         </div>
-                        <button class="buy-btn">
-                            <span>Add to bag</span>
-                        </button>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-content-inner pl40">
+                            <h2 class="product-title">This is a title</h2>
+                            <p>This is a description of the product</p>
+                            <div class="product-title product-price">£6.66</div>
+                            <div class="product-title">
+                                Select a size
+                            </div>
+                            <div class="product-varients">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">S</label>
+                                        <!-- <div class="check"></div> -->
+                                    </li>
+                                    
+                                    <li>
+                                        <input type="radio" id="m-option" name="selector">
+                                        <label for="m-option">M</label>
+                                        <!-- <div class="check"></div> -->
+                                    </li>
+                                    
+                                    <li>
+                                        <input type="radio" id="l-option" name="selector">
+                                        <label for="l-option">L</label>
+                                        <!-- <div class="check"></div> -->
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="buy-btn">
+                                <span>Add to bag</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -819,7 +827,8 @@
     </footer>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
+    <script src="https:////cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/helpers.min.js"></script>
 </body>

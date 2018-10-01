@@ -10,7 +10,7 @@ gs.header = document.getElementById("header");
 gs.menuIcon = document.getElementById("nav-btn");
 gs.menuContainer = document.getElementById("hidden-nav");
 gs.menuItems = document.getElementsByClassName("menu-item");
-gs.videoBtns  = document.getElementsByClassName("video-section__load-player-button");
+gs.videoBtns  = document.getElementsByClassName("vid-btn");
 gs.initBGImgLoaded = false;
 
 function onReady() {
@@ -23,6 +23,8 @@ function onReady() {
     gs.menu();
     gs.animateOnScroll();
     gs.videoListener();
+
+    gs.flick();
 }
 
 function onResize() {
