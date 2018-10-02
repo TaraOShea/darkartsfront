@@ -46,7 +46,7 @@ html, body {
 }
 
 body {
-    font: 16px $font-stack;
+    font: 14px $font-stack;
 	font-weight: $font-regular;
 	line-height: 1.5;
     color: $primary-color;
@@ -69,6 +69,23 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+input {
+    margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+    line-height:1;
+    -webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+input:focus
+{
+	outline:0;
 }
 input[type='number'] {
     -moz-appearance:textfield;
@@ -100,13 +117,12 @@ svg, img {
     height: auto;
     display: block;
 }
-h1 {
-    // font-size: 40px;
-    // font-size: 10vw;
+h1, h2, h3, h4, h5 {
+    font-weight: $font-bold;
+    line-height: 1.1;
 }
 h4 {
     text-transform: uppercase;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 ul {
@@ -123,11 +139,19 @@ select {
     text-overflow: '';
     cursor: pointer;
     background-image: linear-gradient(45deg, transparent 50%, $secondary-color 50%),linear-gradient(135deg, $secondary-color 50%, transparent 50%);
-    background-position: calc(100% - 27px) calc(1rem + 3px),calc(100% - 23px) calc(1rem + 3px);
+    background-position: calc(100% - 20px) calc(1rem + 3px),calc(100% - 16px) calc(1rem + 3px);
     background-size: 4px 4px, 4px 4px;
     background-repeat: no-repeat;
     font-family: $font-stack;
 }
+/* ------- COLOURS ---------*/
+.secondary-bg {
+    background-color: $secondary-color;
+}
+.secondary-bg-before:before {
+    background-color: $secondary-color;
+}
+/* ------- END COLOURS ---------*/
 .sub-title {
     position: relative;
     margin-bottom: 40px;
@@ -145,7 +169,6 @@ select {
     height: 3px;
     width: 100%;
     transform: scaleX(0);
-    background: $secondary-color;
 }
 .sub-title:after{
     content: '';
@@ -205,6 +228,27 @@ select {
     opacity: 0;
     transition: opacity 500ms, -webkit-filter 500ms;
 }
+.link {
+    position: relative;
+    cursor: pointer;
+}
+.link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;  
+    transform: scaleX(1);
+    transform-origin: center center;
+    transition: transform 500ms, -webkit-filter 500ms;
+}
+.link:hover::before, .link:focus::before{
+    transform: scaleX(0);
+    transform-origin: center center;
+    transition: transform 500ms, -webkit-filter 500ms;
+}
 /* --------------- GLOBAL ------------------- */
 .margin-top {
     margin-top: 60px;
@@ -230,6 +274,9 @@ select {
     background-position: center center;
     background-color: $secondary-color;
 }
+.qoute-block { 
+    font-size: 24px;
+}
 .txt-block {
     background: $secondary-color;
     color: $primary-color;
@@ -240,31 +287,17 @@ select {
     margin-top: 30px;
     display: inline-block;
 }
-.txt-block a:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: $primary-color;
-    border-radius: 3px;
-    
-    transform: scaleX(1);
-    transform-origin: center center;
-    transition: transform 500ms, -webkit-filter 500ms;
-}
-.txt-block a:hover::before, .txt-block a:focus::before{
-    transform: scaleX(0);
-    transform-origin: center center;
-    transition: transform 500ms, -webkit-filter 500ms;
-}
 .content {
     max-width: 1100px;
     padding: 0 20px;
     margin: 0 auto;
     overflow: hidden;
-    font-weight: $font-bold;
+}
+.content500 {
+    max-width: 500px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow: hidden;   
 }
 .txt-upper {
     text-transform: uppercase;
@@ -283,6 +316,9 @@ select {
 }
 .p1020 {
     padding: 10px 20px;
+}
+.pt20 {
+    padding: 20px 0 0 0;
 }
 .ptb10 {
     padding: 10px 0;
@@ -332,7 +368,7 @@ select {
     text-align: center;
     position: relative;
     font-family: $font-stack;
-    font-size: 21px;
+    font-size: 18px;
     padding: 15px;
     margin: 10px 0;
     line-height: 1;
@@ -340,35 +376,31 @@ select {
     cursor: pointer;
     background-color: $secondary-color;
     color: $primary-color;
+    font-weight: $font-bold;
 }  
+.btn-full span {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
 .btn-full:before {
-    content:'';
+    content: '';
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    border: 1px solid $primary-color;
-    z-index: -1;
-}
-.btn-full input[type=submit]{
-    width: 100%;
-    padding: 15px 10px;
-    background: $primary-color;
-    color: $background-color;
-    box-shadow: none;
-    border: 0;
-    border-radius: 0;
-    font-family: $font-stack;
-    text-transform: uppercase;
-    font-size: 24px;
+    background: $secondary-color;
+    transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
-    cursor: pointer;
+    z-index: 1;
 }
-.btn-full:hover input[type=submit]{
-    background: $background-color;   
-    color: $primary-color;
+.btn-full:hover:before, .btn-full:focus:before {
+    transform: scale(1.02);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
 }
+
 .btn-full a {
     display: block;
 }
@@ -825,7 +857,6 @@ select {
     width: 100%;
     height: 100%;;
     height: 100vh;
-    background-color: $secondary-color;
     position: relative;
 }
 #intro::after {
@@ -924,10 +955,15 @@ select {
     float: left;
     clear: none;
 }
-.product-grid .product-inner {
+.product-grid-four .product {
+    width: 25%;
+    float: left;
+    clear: none;
+}
+.product-grid .product-inner, .product-grid-four .product-inner {
     margin: 20px 10px;
 }
-.product-grid .product-image {
+.product-grid .product-image, .product-grid-four .product-image {
     width: 100%;
     margin-bottom: 30px;
     height: 0;
@@ -935,17 +971,18 @@ select {
     background: #000;
     overflow: hidden;
 }
-.product-grid .product-image img {
+.product-grid .product-image img, .product-grid-four .product-image img {
     transition: all 0.15s ease-in;
 }
-.product-grid .product-image:hover img, .product-grid .product a:focus img {
+.product-grid .product-image:hover img, .product-grid .product a:focus img, 
+.product-grid-four .product-image:hover img, .product-grid-four .product a:focus img  {
     transition: all 0.25s ease-in;
     transform: scale(1.05);
 }
-.product-grid .product-title {
+.product-grid .product-title, .product-grid-four .product-title {
     text-transform: uppercase;
 }
-.product-grid .product-price { 
+.product-grid .product-price, .product-grid-four .product-price { 
     line-height: 1.4;
     color: $primary-color;
 }
@@ -955,6 +992,7 @@ select {
 }
 .products .product-price {
     color: $primary-color;
+    font-weight: $font-bold;
 }
 .product-varients label {
     display: block;
@@ -962,11 +1000,23 @@ select {
     margin-bottom: 0;
     pointer-events: none;
 }
-.product-varients select {
-    font-size: 14px;
-    width: 50%;
+.product-varients {
+    overflow: hidden;
+}
+.product-varient {
+    float: left;
+    clear: none;
+    width: 48%;
     margin-bottom: 20px;
-    padding: 10px 20px;
+}
+.product-varient:nth-child(odd){
+    margin-right: 4%;
+}
+.product-varients select, .product-varients input {
+    font-size: 14px;
+    font-family: $font-stack;
+    width: 100%;
+    padding: 10px;
     background-color: $primary-color;
     border: 1px solid $primary-color;
     border-radius: 0;
@@ -977,6 +1027,9 @@ select {
     width: 50%;
     float: left;
     clear: none;
+}
+.product-content-inner {
+    padding-right: 20px;
 }
 .product-image {
     width: 100%;
@@ -1075,7 +1128,7 @@ select {
 }
 /* --------------- FOOTER ------------------- */
 footer {
-    background: $secondary-color;
+    color: $primary-color;
     overflow: hidden;
 }
 footer nav {
@@ -1084,6 +1137,10 @@ footer nav {
 footer ul li {
     margin: 0 0 0 5px;
     padding: 0 0 0 5px;
+}
+
+footer .social-menu li svg{
+    max-width: 40px;
 }
 footer .footer-devil {
     height: 1px;
@@ -1158,7 +1215,7 @@ footer .sub-footer {
     .nav-trigger {
         left: 3%;
     }
-    .product-grid  .product {
+    .product-grid .product, .product-grid-four .product {
         width: 100%;
     }
     .cart-item {
