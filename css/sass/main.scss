@@ -115,6 +115,19 @@ ul {
 ul li {
     display: inline-block;
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, $secondary-color 50%),linear-gradient(135deg, $secondary-color 50%, transparent 50%);
+    background-position: calc(100% - 27px) calc(1rem + 3px),calc(100% - 23px) calc(1rem + 3px);
+    background-size: 4px 4px, 4px 4px;
+    background-repeat: no-repeat;
+    font-family: $font-stack;
+}
 .sub-title {
     position: relative;
     margin-bottom: 40px;
@@ -289,6 +302,9 @@ ul li {
 .pl40 {
     padding: 0 0 0 40px;
 }
+.mtb15 {
+    margin: 15px 0;
+}
 .col50 {
     width: 50%;
     float: left;
@@ -304,18 +320,26 @@ ul li {
     display: inline-block;
     margin-right: 5px;
 }
+.btn--clear {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    color: #4a4a4a;
+    transition: 0.15s opacity ease-out;
+}
 .btn-full {
     width: 100%;
     text-align: center;
     position: relative;
     font-family: $font-stack;
-    text-transform: uppercase;
-    font-size: 24px;
-    padding: 5px;
+    font-size: 21px;
+    padding: 15px;
     margin: 10px 0;
     line-height: 1;
     box-sizing: border-box;
     cursor: pointer;
+    background-color: $secondary-color;
+    color: $primary-color;
 }  
 .btn-full:before {
     content:'';
@@ -347,13 +371,6 @@ ul li {
 }
 .btn-full a {
     display: block;
-}
-.btn--clear {
-    position: relative;
-    background-color: transparent;
-    border: 0;
-    color: #4a4a4a;
-    transition: 0.15s opacity ease-out;
 }
 .center {
     display: table;
@@ -879,6 +896,27 @@ ul li {
 /* --------------- PRODUCT PAGE ------------------- */
 .template-product {
     background: $greyone;
+    color: $secondary-color;
+}
+.sub-menu {
+    color: $secondary-color;
+    margin: 0 0 40px 0;
+}
+.sub-menu ul li {
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+    border-right: 1px solid $secondary-color;
+}
+.sub-menu ul li:last-child {
+    border: none;
+    margin: 0 0px 0 0;
+}
+.products .product-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.products .product-sub {
+    color: $primary-color;
 }
 /* ------------ PRODUCT GRID ---------------- */
 .product-grid .product {
@@ -914,7 +952,26 @@ ul li {
 /* ------------ PRODUCT PAGE ---------------- */
 .products {
     overflow: hidden;
-
+}
+.products .product-price {
+    color: $primary-color;
+}
+.product-varients label {
+    display: block;
+    padding: 5px 0px;
+    margin-bottom: 0;
+    pointer-events: none;
+}
+.product-varients select {
+    font-size: 14px;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .product-images, .product-content  {
     width: 50%;
@@ -927,6 +984,7 @@ ul li {
 .product-images .flickity-page-dots {
     bottom: 20px;
 }
+
 /* --------------- CART ------------------- */
 .cart-content {
     width: 60%;
