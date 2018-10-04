@@ -1251,6 +1251,9 @@ footer {
 footer nav {
     display: inline-block;
 }
+footer a, footer a:hover, footer a:visited, footer a:focus {
+    color: $primary-color;
+}
 footer ul li {
     margin: 0 0 0 5px;
     padding: 0 0 0 5px;
