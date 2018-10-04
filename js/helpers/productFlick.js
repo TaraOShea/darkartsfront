@@ -1,8 +1,8 @@
 gs.flick = function() {
     console.log("flick");
-    if($('.product-images').length > 0){
-        gs.carousel = $('.product-images').flickity({
-            cellSelector: '.product-image', 
+    if($('.flick-images').length > 0){
+        gs.carousel = $('.flick-images').flickity({
+            cellSelector: '.flick-image', 
             contain: true,
             adaptiveHeight: false,
             prevNextButtons: false,

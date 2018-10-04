@@ -44,15 +44,16 @@
     <!-- SITE CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css?_cacheOverride=1530702435512">
+
     <!--[if lt IE 9]>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body class="template-product">
+<body>
+
 	<header id="header" class="alt">
 		<div class="content txt-center txt-upper">
             <h1 id="logo">
-                <a href="/">
                     <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 319.5">
                         <g id="logo-icon">
                             <g id="demon">
@@ -577,15 +578,17 @@
                             </g>
                         </g>
                     </svg>
-                </a>
+
             </h1>
             <div class="nav-trigger">
                 <div id="nav-btn">
-                    <div class="menu__icon">
-                        <div class="menu__line menu__line--1"></div>
-                        <div class="menu__line menu__line--2"></div>
-                        <div class="menu__line menu__line--3"></div>
-                    </div>
+                    <button class="btn--clear">
+                        <div class="menu__icon">
+                            <div class="menu__line menu__line--1"></div>
+                            <div class="menu__line menu__line--2"></div>
+                            <div class="menu__line menu__line--3"></div>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div id="hidden-nav">
@@ -722,140 +725,100 @@
             </div>
 		</div>
     </header>
-
     <div id="content" class="margin-top">
-        <div class="block">
-            <div class="content hidden">
-                <div class="sub-title txt-center secondary-bg-before">
-                    <h2 class="notch-title">Shop</h2>
+
+        <div class="block hidden story">
+            <div class="content txt-center">
+                <div class="sub-title secondary-bg-before">
+                    <h2 class="notch-title">Our Story</h2>
                 </div>
-                <div class="sub-menu txt-center">
-                    <ul>
-                        <li>All Products</li>
-                        <li>Coffee</li>
-                        <li>Clothing</li>
-                        <li>Gifts</li>
-                        <li>Sale</li>
-                    </ul>
+                <div class="vid-block hero-image" data-video-id="169239735">
+                    <div class="video-section__cover-overlay"></div>
+                    <div class="vid-btn">
+                        <button class="btn btn--clear video-section__load-player-button">
+                            <span class="visually-hidden">Play video</span>
+                            <div class="video-section__load-player-button-triangle"></div>
+                            <div class="video-section__load-player-button-circle"></div>
+                        </button>
+                    </div>
+                    <button class="btn btn--clear btn--square video-section__player-close">
+                            <span class="visually-hidden">Stop video</span>
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 16.8 16.8"><path fill="#444" d="M16.8 1.5L15.4.1 8.4 7l-7-7L0 1.4l7 7-7 7 1.4 1.4 7-7 7 7 1.4-1.4-7-7z"></path></svg>
+                    </button>
+                    <div class="video-section__iframe"></div>
                 </div>
-                <div class="products">
-                    <div class="product-images flick-images">
-                        <div class="product-image flick-image">
-                            <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                        </div>
-                        <div class="product-image flick-image">
-                            <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-content-inner pl40">
-                            <h2 class="product-title">RUBY RIDGE</h2>
-                            <div class="product-sub">Colombia, La Piramide</div>
-                            <div class="product-title product-price mtb15">£6.66</div>
-                            <div class="product-varients">
-                                <div class="product-varient">
-                                    <label for="grind">Grind</label>
-                                    <select name"grind" class="product-form__item">
-                                        <option id="m-option">Whole Bean</option>
-                                        <option id="l-option">Whole Bean</option>
-                                    </select>
-                                </div>
-                                <div class="product-varient">
-                                    <label for="grind">Size</label>
-                                    <select name"size" class="product-form__item">
-                                        <option id="250-option">250g</option>
-                                        <option id="500-option">500g</option>
-                                    </select>
-                                </div>
-                                <div class="product-varient">
-                                    <label for="grind">Quantity</label>
-                                    <input type="number" placeholder="1" step="1" />                                </div>
-                            </div>
-                            <button class="buy-btn btn--clear btn-full">
-                                <span>Add to cart</span>
-                            </button>
-                            <div class="ptb20">
-                                <p>
-                                    Colombia, La Piramide<br>
-                                    Variety: Caturra, Typica<br>
-                                    Process: Washed<br>
-                                    Altitude: 1700 - 2000 masl
-                                </p>
-                                <p>−</p>
-                                <p>Inzá is a municipality located in a sacred valley that sits below the elevated mountains that separate Huila and Cauca. More than 14 centuries of history and tradition of native indigeneous tribes make Inzá ones of Colombia’s richest in arqueological treasures, being home to the archeological park of Tierradentro. Lovely caramel sweetness, marshmallow mouthfeel, with notes of apple and pear</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="post-content secondary-color">
+                    <p>Dark Arts Coffee is a coffee roastery started by friends in East London with twisted
+                            visions of using alchemy to combine fire, water and magic beans into a divine elixir.
+                            We had visions of funnelling the profits into a cult based on our love of the occult,
+                            bikes and all things unholy.</p>
+                    <p>However, none of that worked out and now we’re fucking sick to death of bullies calling Dark Arts - ‘that harry
+                            potter coffee’. And roastery isn’t even a word.</p>
+                        <p>
+                                As a result, instead, we’ve had to focus on importing the best beans from all over the world and roasting them
+                                until they taste good as a brown drink.
+                        </p>
+                        <p>
+                                We have never made a business decision sober.
+                        </p>
+                </div>           
+            </div>
+            <div class="full-flick-gallery">
+                <div class="flick-images">
+                    <div class="flick-image"><img src="/assets/imgs/news.png" /></div>
+                    <div class="flick-image"><img src="/assets/imgs/news.png" /></div>
                 </div>
             </div>
-        </div>
-        <div class="block txt-center qoute-block p40">
-            <div class="content500">
-                <div class="center">
-                    <div class="center-inner">
-                        Want coffee sent to you every month?
-                        Why not buy a subscription
-                        <div class="pt20">
-                            <a class="link secondary-bg-before">Buy now</a>
-                        </div>
-                    </div>
+            <div class="content txt-center product-grid">
+                <div class="sub-title secondary-bg-before">
+                    <h2 class="notch-title">The Team</h2>
                 </div>
             </div>
-        </div>
-        <div class="block ptb40">
-            <div class="content hidden">
-                <div class="sub-title txt-center secondary-bg-before">
-                    <h2 class="notch-title">Related Products</h2>
+
+            <div class="content txt-center team-grid secondary-color">
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
                 </div>
-                <div class="product-grid-four">
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
                 </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
+                </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
+                </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
+                </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
+                </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
+                </div>
+                <div class="member">
+                    <div class="member-img"></div>
+                    <h3>Brad</h3>
+                    <h4 class="primary-color">Managing Director</h4>
+                </div>
+
             </div>
         </div>
-    </div>
 
     
 
@@ -907,7 +870,8 @@
     </footer>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https:////cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/helpers.min.js"></script>
