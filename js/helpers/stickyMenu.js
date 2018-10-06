@@ -3,8 +3,8 @@ gs.logoScrollResize = function(){
     if(document.getElementsByClassName("home").length > 0){
         gs.logoH = window.innerHeight;
         gs.logoW = Math.floor(gs.logo.offsetWidth);
-        gs.heightAtMax = 90;
-        gs.widthAtMax = 100;
+        gs.heightAtMax = 70;
+        gs.widthAtMax = 80;
 
         gs.stick = gs.logo.offsetHeight + gs.logo.offsetTop;
         gs.maxScrollDistance = gs.intro.offsetHeight - gs.widthAtMax;
@@ -31,17 +31,17 @@ gs.stickyMenu = function() {
         gs.logo.style.height = gs.zoomedHeight +"px";
 
         if(window.pageYOffset >= gs.intro.offsetHeight - gs.heightAtMax) {
-            gs.logo.style.maxWidth = (gs.zoomedWidth*2)+20 +"px";
+            gs.logo.style.maxWidth = (gs.zoomedWidth*2) +"px";
             gs.logo.style.height = gs.zoomedHeight +"px";
 
-            gs.logosvg.style.marginTop = "-90px";
+            // gs.logosvg.style.marginTop = -gs.heightAtMax+"px";
             gs.logotxt.style.display = "none";
             gs.logoicon.style.display = "none";
             gs.logosml.style.display = "block";
 
             gs.header.classList.add('alt');
         } else {
-            gs.logosvg.style.marginTop = "0px";
+            // gs.logosvg.style.marginTop = "0px";
             gs.logotxt.style.display = "block"; 
             gs.logoicon.style.display = "block";
             gs.logosml.style.display = "none";
