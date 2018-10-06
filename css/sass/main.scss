@@ -188,7 +188,7 @@ select {
 .notch-title {
     color: $secondary-color;
     padding: 5px 20px;
-    width: 110px;
+    width: 150px;
     background: $primary-color;
     border: 3px solid $secondary-color;
     display: inline-block;
@@ -702,10 +702,9 @@ select {
     display: block;
 }
 .alt #logo { 
-    max-width: 250px;
-    height: 80px;
+    height: 70px;
     transform: unset;
-    max-width: 180px;
+    max-width: 160px;
 }
 .alt #logo-icon, .alt #logo-text {
     display: none;
