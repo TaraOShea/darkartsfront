@@ -1,5 +1,5 @@
 function initAccordion(accordionElem){
-  
+  if(accordionElem){
     //when panel is clicked, handlePanelClick is called.          
     function handlePanelClick(event){
         showPanel(event.currentTarget);
@@ -16,11 +16,12 @@ function initAccordion(accordionElem){
        panel.classList.add("active");
     }
     var allPanelElems = accordionElem.querySelectorAll(".panel");
-    for (var i = 0, len = allPanelElems.length; i < len; i++){
-         allPanelElems[i].addEventListener("click", handlePanelClick);
+        for (var i = 0, len = allPanelElems.length; i < len; i++){
+            allPanelElems[i].addEventListener("click", handlePanelClick);
+       }
+       //By Default Show first panel
+       showPanel(allPanelElems[0])
     }
-    //By Default Show first panel
-    showPanel(allPanelElems[0])
-  }
+}
 
 initAccordion(document.getElementById("accordion"));
