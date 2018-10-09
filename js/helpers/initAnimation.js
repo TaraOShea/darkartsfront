@@ -6,6 +6,7 @@ gs.initAnimation = function(){
                 // if(gs.initBGImgLoaded){
                     gs.intro.className += " into-loaded";
                     TweenMax.to(gs.menuIcon, 0.4, {scale: 1, ease: Power4.easeInOut, delay: 0.4 });
+                    TweenMax.to(gs.searchIcon, 0.4, {scale: 1, ease: Power4.easeInOut, delay: 0.4 });
                 // } 
             }
         });

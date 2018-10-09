@@ -43,13 +43,12 @@
 
     <!-- SITE CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css?_cacheOverride=1530702435512">
 
     <!--[if lt IE 9]>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="template-index">
 
     <header id="header" class="alt">
             <div class="content txt-center txt-upper">
@@ -618,292 +617,424 @@
             </div>
     </header>
     <div id="content" class="margin-top">
-
-        <div class="block hidden story">
-            <div class="content txt-center">
-                <div class="sub-title secondary-bg-before">
-                    <h2 class="notch-title">Our Story</h2>
+        <div class="block ptb60 hidden news-grid">
+            <div class="content">
+                <div class="sub-title secondary-bg-before txt-center">
+                    <h2 class="notch-title">Subsciption</h2>
                 </div>
-                <div class="vid-block hero-image" data-video-id="169239735">
-                    <div class="video-section__cover-overlay"></div>
-                    <div class="vid-btn">
-                        <button class="btn btn--clear video-section__load-player-button">
-                            <span class="visually-hidden">Play video</span>
-                            <div class="video-section__load-player-button-triangle"></div>
-                            <div class="video-section__load-player-button-circle"></div>
-                        </button>
+                <div class="subcriptions">
+                    <div class="txt-center secondary-color sub-txt-full">
+                            Please follow the simple steps below to choose your subscription option.
+                            Every month we will send you one of our awesome coffee from our existing range, a preview of a
+                            new coffee or a small micro lot exclusive to our subscribers
                     </div>
-                    <button class="btn btn--clear btn--square video-section__player-close">
-                            <span class="visually-hidden">Stop video</span>
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 16.8 16.8"><path fill="#444" d="M16.8 1.5L15.4.1 8.4 7l-7-7L0 1.4l7 7-7 7 1.4 1.4 7-7 7 7 1.4-1.4-7-7z"></path></svg>
-                    </button>
-                    <div class="video-section__iframe"></div>
-                </div>
-                <div class="post-content secondary-color">
-                    <p>Dark Arts Coffee is a coffee roastery started by friends in East London with twisted
-                            visions of using alchemy to combine fire, water and magic beans into a divine elixir.
-                            We had visions of funnelling the profits into a cult based on our love of the occult,
-                            bikes and all things unholy.</p>
-                    <p>However, none of that worked out and now we’re fucking sick to death of bullies calling Dark Arts - ‘that harry
-                            potter coffee’. And roastery isn’t even a word.</p>
-                        <p>
-                                As a result, instead, we’ve had to focus on importing the best beans from all over the world and roasting them
-                                until they taste good as a brown drink.
-                        </p>
-                        <p>
-                                We have never made a business decision sober.
-                        </p>
-                </div>           
-            </div>
-            <div class="full-flick-gallery">
-                <div class="flick-images">
-                    <div class="flick-image"><img src="assets/imgs/news.png" /></div>
-                    <div class="flick-image"><img src="assets/imgs/news.png" /></div>
-                </div>
-            </div>
-            <div class="content txt-center product-grid">
-                <div class="sub-title secondary-bg-before">
-                    <h2 class="notch-title">The Team</h2>
-                </div>
-            </div>
-
-            <div class="content txt-center team-grid secondary-color">
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-                <div class="member">
-                    <div class="member-img"></div>
-                    <h3>Brad</h3>
-                    <h4 class="primary-color">Managing Director</h4>
-                </div>
-
-            </div>
-        </div>
-
-    
-
-        <footer id="footer" class="txt-center secondary-bg">
-                <div class="content footer-col p20 hidden">
-                    <div class="footer-devil">
-                        <div class="footer-devil-image">
-                                <img src="assets/imgs/devil.svg" />
+                    <div id="accordion" class="subcription-form secondary-color">
+                        <div class="panel subcription-item active">
+                            <div class="subcription-header secondary-bg primary-color txt-center p10 txt-upper">
+                                <h3>WHICH TYPE OF SUBSCRIPTION WOULD YOU LIKE?</h3>
+                            </div>
+                            <div class="acc-body subcription-content">
+                                <form>
+                                    <div class="col50 txt-center">
+                                        <h4 class="txt-upper">ONGOING SUBSCRIPTIONS</h4>
+                                        <p>
+                                                Want coffee delivered to you regularly,
+                                                charged via recurring payments?
+                                        </p>
+                                        <p>
+                                                Sign up for this ongoing weekly, fortnightly or
+                                                monthly coffee subscription available with either
+                                                filter or espresso beans.
+                                        </p>
+                                        <input type="radio" name="type" value="coffee">
+                                    </div>
+                                    <div class="col50 txt-center">
+                                        <h4 class="txt-upper">PLAN OR GIFT SUBSCRIPTIONS</h4>
+                                        <p>
+                                                Want 3, 6 or 12 months of coffee delivery monthly
+                                                for you or a gift?
+                                        </p>
+                                        <p>
+                                                Sign up for this monthly coffee subscription for
+                                                3, 6 or 12 months, available with either our pick
+                                                filter or espresso beans.
+                                        </p>
+                                        <input type="radio" name="plan" value="sub">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panel subcription-item">
+                            <div class="subcription-header secondary-bg primary-color txt-center p10 txt-upper">
+                                <h3>WHAT WOULD YOU LIKE TO BREW?</h3>
+                            </div>
+                            <div class="acc-body subcription-content">
+                                <form>
+                                    <div class="col50 txt-center">
+                                        <h4 class="txt-upper">ONGOING SUBSCRIPTIONS</h4>
+                                        <p>
+                                                Want coffee delivered to you regularly,
+                                                charged via recurring payments?
+                                        </p>
+                                        <p>
+                                                Sign up for this ongoing weekly, fortnightly or
+                                                monthly coffee subscription available with either
+                                                filter or espresso beans.
+                                        </p>
+                                        <input type="radio" name="type" value="coffee">
+                                    </div>
+                                    <div class="col50 txt-center">
+                                        <h4 class="txt-upper">PLAN OR GIFT SUBSCRIPTIONS</h4>
+                                        <p>
+                                                Want 3, 6 or 12 months of coffee delivery monthly
+                                                for you or a gift?
+                                        </p>
+                                        <p>
+                                                Sign up for this monthly coffee subscription for
+                                                3, 6 or 12 months, available with either our pick
+                                                filter or espresso beans.
+                                        </p>
+                                        <input type="radio" name="plan" value="sub">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panel subcription-item">
+                                <div class="subcription-header secondary-bg primary-color txt-center p10 txt-upper">
+                                    <h3>WHAT SIZE BAGS WOULD YOU LIKE?</h3>
+                                </div>
+                                <div class="acc-body subcription-content">
+                                    <form>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">ONGOING SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want coffee delivered to you regularly,
+                                                    charged via recurring payments?
+                                            </p>
+                                            <p>
+                                                    Sign up for this ongoing weekly, fortnightly or
+                                                    monthly coffee subscription available with either
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="type" value="coffee">
+                                        </div>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">PLAN OR GIFT SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want 3, 6 or 12 months of coffee delivery monthly
+                                                    for you or a gift?
+                                            </p>
+                                            <p>
+                                                    Sign up for this monthly coffee subscription for
+                                                    3, 6 or 12 months, available with either our pick
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="plan" value="sub">
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                        <div class="panel subcription-item">
+                                <div class="subcription-header secondary-bg primary-color txt-center p10 txt-upper">
+                                    <h3>HOW OFTEN WOULD YOU LIKE YOUR COFFEE DELIVERED?</h3>
+                                </div>
+                                <div class="acc-body subcription-content">
+                                    <form>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">ONGOING SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want coffee delivered to you regularly,
+                                                    charged via recurring payments?
+                                            </p>
+                                            <p>
+                                                    Sign up for this ongoing weekly, fortnightly or
+                                                    monthly coffee subscription available with either
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="type" value="coffee">
+                                        </div>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">PLAN OR GIFT SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want 3, 6 or 12 months of coffee delivery monthly
+                                                    for you or a gift?
+                                            </p>
+                                            <p>
+                                                    Sign up for this monthly coffee subscription for
+                                                    3, 6 or 12 months, available with either our pick
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="plan" value="sub">
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                        <div class="panel subcription-item">
+                                <div class="subcription-header secondary-bg primary-color txt-center p10 txt-upper">
+                                    <h3>WHERE WOULD YOU LIKE YOUR COFFEE DELIVERED?</h3>
+                                </div>
+                                <div class="acc-body subcription-content">
+                                    <form>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">ONGOING SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want coffee delivered to you regularly,
+                                                    charged via recurring payments?
+                                            </p>
+                                            <p>
+                                                    Sign up for this ongoing weekly, fortnightly or
+                                                    monthly coffee subscription available with either
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="type" value="coffee">
+                                        </div>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">PLAN OR GIFT SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want 3, 6 or 12 months of coffee delivery monthly
+                                                    for you or a gift?
+                                            </p>
+                                            <p>
+                                                    Sign up for this monthly coffee subscription for
+                                                    3, 6 or 12 months, available with either our pick
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="plan" value="sub">
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                        <div class="panel subcription-item">
+                                <div class="subcription-header secondary-bg primary-color txt-center p10 txt-upper">
+                                    <h3>YOUR SUBSCRIPTION SUMMARY</h3>
+                                </div>
+                                <div class="acc-body subcription-content">
+                                    <form>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">ONGOING SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want coffee delivered to you regularly,
+                                                    charged via recurring payments?
+                                            </p>
+                                            <p>
+                                                    Sign up for this ongoing weekly, fortnightly or
+                                                    monthly coffee subscription available with either
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="type" value="coffee">
+                                        </div>
+                                        <div class="col50 txt-center">
+                                            <h4 class="txt-upper">PLAN OR GIFT SUBSCRIPTIONS</h4>
+                                            <p>
+                                                    Want 3, 6 or 12 months of coffee delivery monthly
+                                                    for you or a gift?
+                                            </p>
+                                            <p>
+                                                    Sign up for this monthly coffee subscription for
+                                                    3, 6 or 12 months, available with either our pick
+                                                    filter or espresso beans.
+                                            </p>
+                                            <input type="radio" name="plan" value="sub">
+                                        </div>
+                                    </form>
+                                </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <nav>
-                        <ul>
-                            <li>Home</li>
-                            <li>Shop</li>
-                            <li>Subsciption</li>
-                            <li><a href="news.html" class="primary-color">News</a></li>
-                            <li>Our Story</li>
-                            <li>Contact</li>
-                            <li>T&amp;C</li>
-                            <li>FAQ</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-col ptb40 social-menu">
-                    <nav>
-                        <ul>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g class="instgram social-fill">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                    </g>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g class="facebook social-fill">
-                                        <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                                    </g>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g class="twitter social-fill">
-                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                                    </g>
-                                </svg>
-                            </li>
-                        </ul>
-                </div>
-                <div class="footer-col sub-footer p1020">
-                        &copy; 2018 Dark Arts
-                </div>
-        </footer>
-        <div id="hidden-nav">
-                <h1 id="logo-nav">
-                    <svg id="logo-svg-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 319.5">
-                        <g id="logo-sml-nav">
-                            <g>
-                                <g>
-                                    <path d="M21.2,305.9c-0.2-1.2-0.5-2.3-0.7-3.5c-0.9-4.6-3.3-7.6-7.5-9.2c-1.3,0-2.5-0.1-3.8,0.1c-2.9,0.3-5.8,1-8.1,3.2
-                                        c-1.6,1.4-1.4,2.2,0.2,3.4c1.8,1.4,1.8,1.4,1.3,3.7c-0.1,0.4-0.2,0.8-0.3,1.2c-0.8,1.7-0.7,3,0.7,4.3c0.9,0.8,0.6,2-0.3,2.7
-                                        c-0.4,0.3-0.8,0.6-1.2,1c-1.3,1.4-1.2,2.4,0.4,3c1.3,0.6,2.7,1,4.1,1.1c2.4,0.3,4.7,0.2,7,0.3c3.1,0.1,5.7-2,6.7-5.2
-                                        c0.2-0.7,0.5-1.4,0.8-1.9C21.3,308.7,21.6,307.4,21.2,305.9z M16.2,309.2c-0.8,2-2.3,2.9-4.2,2.8c-1.1,0-2.2-0.2-3.3-0.3
-                                        c-1.4-0.5-1.8-1.3-1.4-2.9c0.2-0.7,0.5-1.5,0.9-2.1c0.9-1.2,0.7-2.2-0.1-3.4c-0.3-0.5-0.6-1.4-0.5-2c0.2-1.5,1-2,2.6-2.1
-                                        C14.7,299.2,18.1,304.6,16.2,309.2z"></path>
-                                    <path d="M47.8,313.6c-0.7-0.5-1.4-0.8-2.2-1.2c-1.9-1-2.4-3.4-0.9-5.1c0.6-0.6,0.6-1.2,0.1-1.7c-0.8-1-1.7-1.9-2.5-2.8
-                                        c-1.5-1.5-2.1-3.3-1.9-5.5c0.1-1,0.3-1.9,0.5-2.8c0.1-0.5,0-1-0.2-1.3c-2.8-2.8-5.8-2.8-8.6-0.1c-0.6,0.6-0.8,1-0.5,2
-                                        c1,3.2-0.3,6.6-3,8.2c-1.8,1-1.9,1.7-0.6,3.4c1,1.3,1.2,2.3,0.3,3.7c-0.7,1.2-1.6,2.1-2.5,3c-1.1,1.2-1,2.8,0.4,3.4
-                                        c0.9,0.3,1.9,0.3,2.8,0.2c1.1-0.1,2.1-0.6,3.2-1c1.4-0.5,1.7-1.5,0.8-2.7c-0.2-0.2-0.3-0.5-0.4-0.6c-0.8-1.4-0.3-2.7,0.2-3.9
-                                        c0.2-0.4,1.2-0.4,1.8-0.5c0.5-0.1,1,0,1.4,0c0-0.1,0-0.1,0-0.2c1.4,0.2,2.9,0.3,4.3,0.7c0.3,0.1,0.8,0.8,0.9,1.3
-                                        c0.3,1.6-0.3,2.8-1.6,3.8c-1.4,1.1-1.5,2-0.3,3.4c2.5,3,7.2,2.4,9-1C48.8,315.3,48.7,314.3,47.8,313.6z M36.5,304.5
-                                        c-2.1,0-2.5-0.6-2.1-2.8c0.1-0.6,0.1-1.2,0.4-1.7c0.3-0.4,0.8-0.8,1.3-0.8c0.3,0,0.7,0.6,0.9,1c0.3,0.8,0.5,1.6,0.8,2.4
-                                        C38.2,304.2,38.1,304.5,36.5,304.5z"></path>
-                                    <path d="M71.1,313.6c-1.3,0.1-2-0.6-2.4-1.9c-0.1-0.5-0.4-0.9-0.7-1.3c-1.4-1.9-1.1-3.7-0.1-5.7c0.2-0.4,0.3-0.8,0.6-1.2
-                                        c1.2-1.7,1.3-3.7,0.6-5.7c-0.1-0.2-0.1-0.5-0.2-0.6c-0.4-1.3-0.6-2.9-1.9-3.3c-2.1-0.6-4.3-1.2-6.5-1.4c-1.9-0.1-3.8,0.5-5.6,0.6
-                                        c-1.2,0.1-1.9,0.9-2.5,1.9c-0.8,1.5-0.6,2.3,1,2.7c0.9,0.2,1.3,0.8,1.5,1.8c0.4,2.1-0.7,3.2-1.7,4.6c-1.1,1.5-1,2.2,0.5,2.9
-                                        c1.6,0.7,2.1,2,2,3.6c-0.1,1-0.5,2-0.7,3c-0.2,0.8-0.5,1.7-0.2,2.4c0.3,0.8,1.1,1.4,2.1,1.1c0.7-0.2,1.4-0.1,2.1-0.2
-                                        c1.5-0.1,2.4-2.1,1.7-3.6c-0.3-0.8-1-1.5-1.1-2.3c-0.1-1.2-0.1-2.5,0.3-3.4c0.6-1,2.1-0.5,3.1,0.7c0.5,0.5,0.8,1.1,1.3,1.6
-                                        c1,1.2,1.2,2.5,0.6,4.1c-0.7,1.9-0.2,3,1.6,3.4c1.4,0.3,2.9,0.3,4.3,0.3c1.3,0.1,1.8-0.5,1.9-1.8
-                                        C72.9,314.8,72.2,313.5,71.1,313.6z M65.5,300.9c-0.3,1.3-1.2,1.9-2.4,1.8c-1.2,0-2.2,0.1-3.4,0.1c-0.9,0.1-1.3-0.3-1.3-1.3
-                                        c0-0.5-0.1-0.9-0.1-1.4c-0.2-1.9,0.6-3.1,2.3-3.6c1.4-0.3,2.7-0.2,3.9,0.9C65.6,298.3,65.9,299.5,65.5,300.9z"></path>
-                                    <path d="M98.1,313.1c-1.8-0.1-2.4-1.3-2.9-3c-0.5-1.7-1.6-3.2-2.4-4.9c-0.3-0.6-0.6-1.9-0.3-2.2c1.3-1.5,2.1-3.7,4.3-4.1
-                                        c1.2-0.3,1.6-1.7,0.8-2.6c-1.1-1.4-5.8-2.3-7.3-1.5c-0.2,0.1-0.5,0.2-0.5,0.4c-0.2,0.4-0.4,1-0.3,1.3c1,2.1,1,2.1-0.6,3.7
-                                        c-0.4,0.4-0.8,0.8-1.4,1.4c-0.3,0.2-0.7,0.5-1.3,0.8c-1.2,0.6-2.2,0.1-2.4-1.4c-0.1-1,0.1-2.1,0.5-2.9c1-1.9,0.7-3.5-1.3-4.1
-                                        c-1.3-0.4-2.7-0.7-4-1c-0.9-0.2-1.7,0.5-1.5,1.5c0.1,0.7,0.6,1.4,1,2c0.3,0.6,1,1,1.1,1.7c1.2,4.7,1.3,9.5,0.8,14.3
-                                        c-0.1,0.5-0.2,1-0.5,1.2c-0.7,0.6-1,1.4-0.6,2.3c0.4,0.7,1.1,1.5,1.7,1.6c1.8,0.4,3.6,0.1,5.3-1c1.8-1.2,1.8-2.4,0.1-3.7
-                                        c-0.2-0.1-0.4-0.3-0.6-0.5c-1.4-1.1-1.6-2.6-0.5-4c0.7-0.9,1.6-1.6,2.5-2.4c0.6-0.5,0.9-0.4,1.3,0.4c0.7,1.7,1.7,3.4,2.4,5
-                                        c0.2,0.5,0.3,1.2,0.2,1.8c-0.2,1.6,0.1,2.8,1.5,3.3c1.3,0.5,2.8,0.6,4.2,0.7c1.2,0.1,1.8-0.6,2-1.9
-                                        C99.8,313.8,99,313.1,98.1,313.1z"></path>
-                                </g>
-                                <g>
-                                    <path d="M135.9,313.6c-0.7-0.5-1.4-0.8-2.2-1.2c-1.9-1-2.4-3.4-0.9-5.1c0.6-0.6,0.6-1.2,0.1-1.7c-0.8-1-1.7-1.9-2.5-2.8
-                                        c-1.5-1.5-2.1-3.3-1.9-5.5c0.1-1,0.3-1.9,0.5-2.8c0.1-0.5,0-1-0.2-1.3c-2.8-2.8-5.8-2.8-8.6-0.1c-0.6,0.6-0.8,1-0.5,2
-                                        c1,3.2-0.3,6.6-3,8.2c-1.8,1-1.9,1.7-0.6,3.4c1,1.3,1.2,2.3,0.3,3.7c-0.7,1.2-1.6,2.1-2.5,3c-1.1,1.2-1,2.8,0.4,3.4
-                                        c0.9,0.3,1.9,0.3,2.8,0.2c1.1-0.1,2.1-0.6,3.2-1c1.4-0.5,1.7-1.5,0.8-2.7c-0.2-0.2-0.3-0.5-0.4-0.6c-0.8-1.4-0.3-2.7,0.2-3.9
-                                        c0.2-0.4,1.2-0.4,1.8-0.5c0.5-0.1,1,0,1.4,0c0-0.1,0-0.1,0-0.2c1.4,0.2,2.9,0.3,4.3,0.7c0.3,0.1,0.8,0.8,0.9,1.3
-                                        c0.3,1.6-0.3,2.8-1.6,3.8c-1.4,1.1-1.5,2-0.3,3.4c2.5,3,7.2,2.4,9.1-1C136.9,315.3,136.8,314.3,135.9,313.6z M124.6,304.5
-                                        c-2.1,0-2.5-0.6-2.1-2.8c0.1-0.6,0.1-1.2,0.4-1.7c0.3-0.4,0.8-0.8,1.3-0.8c0.3,0,0.7,0.6,0.9,1c0.3,0.8,0.5,1.6,0.8,2.4
-                                        C126.4,304.2,126.2,304.5,124.6,304.5z"></path>
-                                    <path d="M158.7,313.6c-1.3,0.1-2-0.6-2.4-1.9c-0.1-0.5-0.4-0.9-0.7-1.3c-1.4-1.9-1.1-3.7-0.1-5.7c0.2-0.4,0.3-0.8,0.6-1.2
-                                        c1.2-1.7,1.3-3.7,0.6-5.7c-0.1-0.2-0.1-0.5-0.2-0.6c-0.4-1.3-0.6-2.9-1.9-3.3c-2.1-0.6-4.3-1.2-6.5-1.4c-1.9-0.1-3.8,0.5-5.6,0.6
-                                        c-1.2,0.1-1.9,0.9-2.5,1.9c-0.8,1.5-0.6,2.3,1,2.7c0.9,0.2,1.3,0.8,1.5,1.8c0.4,2.1-0.7,3.2-1.7,4.6c-1.1,1.5-1,2.2,0.5,2.9
-                                        c1.6,0.7,2.1,2,2,3.6c-0.1,1-0.5,2-0.7,3c-0.2,0.8-0.5,1.7-0.2,2.4c0.3,0.8,1.1,1.4,2.1,1.1c0.7-0.2,1.4-0.1,2.1-0.2
-                                        c1.5-0.1,2.4-2.1,1.7-3.6c-0.3-0.8-1-1.5-1.1-2.3c-0.1-1.2-0.1-2.5,0.3-3.4c0.6-1,2.1-0.5,3.1,0.7c0.5,0.5,0.8,1.1,1.3,1.6
-                                        c1,1.2,1.2,2.5,0.6,4.1c-0.7,1.9-0.2,3,1.6,3.4c1.4,0.3,2.9,0.3,4.3,0.3c1.3,0.1,1.8-0.5,1.9-1.8
-                                        C160.5,314.8,159.8,313.5,158.7,313.6z M153.1,300.9c-0.3,1.3-1.2,1.9-2.4,1.8c-1.2,0-2.2,0.1-3.4,0.1c-0.9,0.1-1.3-0.3-1.3-1.3
-                                        c0-0.5-0.1-0.9-0.1-1.4c-0.2-1.9,0.6-3.1,2.3-3.6c1.4-0.3,2.7-0.2,3.9,0.9C153.2,298.3,153.5,299.5,153.1,300.9z"></path>
-                                    <path d="M185.9,295.8c-0.1-0.1-0.1-0.3-0.2-0.3c-1.3-1-2.5-2.1-4.4-1.9c-5.1,0.5-10.3,1.9-15.4,0c-2-0.7-3.1,0.7-4.2,2.7
-                                        c-0.9,1.7,0.2,3,1.1,4.3c0.8,1,1.4,1,2.2,0.1c0.6-0.6,1.2-1.3,1.8-1.8c1-0.8,3.5-0.5,4.1,0.5c0.6,0.9,1,2.8-0.1,4.1
-                                        c-1.1,1.4-0.9,1.9,0.1,3.2c0.2,0.3,0.5,0.6,0.7,1c0.6,1,0.7,1.9-0.2,2.8c-0.7,0.7-1.3,1.7-1.7,2.8c-0.2,0.4-0.1,1.2,0.1,1.5
-                                        c1.1,1.8,2.8,2.3,4.7,2.3c1.5-0.3,2.7-0.9,3.4-2.5c0.3-0.7,0.2-1.2-0.3-1.7c-2.5-2.6-2.5-2.6-0.5-5.6c0.5-0.8,0.6-1.4,0.2-2.3
-                                        c-0.4-1-0.6-2-0.8-3c-0.2-1.4,0.6-2.1,1.4-2.7c0.9-0.5,1.6-0.1,2.2,0.8c0.3,0.5,0.7,1,1.2,1.4c0.8,0.7,1.7,1,2.7,0.3
-                                        C185.4,300.8,186.4,297.2,185.9,295.8z"></path>
-                                    <path d="M202.6,306.9c-0.6-0.6-1.4-1.5-1.4-2.3c0.1-1.9-1-2.4-2.2-2.7c-0.6-0.2-1.3-0.4-1.9-0.5c-1-0.1-1.7-0.6-2.1-1.8
-                                        c0.1-0.6-0.1-1.6,0.2-1.9c0.7-0.6,1.6-1.2,2.5-0.2c0.3,0.3,0.6,0.5,0.9,0.7c1.4,0.9,3.2,1,4.2-0.3c0.8-1.2,1-3,1.5-4.5
-                                        c0.1-0.1-0.1-0.3-0.2-0.5c-1-1-2.9-1-3.9-0.1c-0.8,0.7-1.6,1-2.6,0.5c-0.8-0.4-1.7-0.8-2.5-0.7c-3.7,0.6-6.4,4.9-3.5,9
-                                        c0.7,1,1.3,2.3,1.5,3.5c0.4,2.1,0.2,2.1,2.1,2.6c0.5,0.1,1.1,0.2,1.7,0.2c1.6,0.1,2.8,1,3.5,2.6c0.2,0.5,0.3,1.3,0.1,1.8
-                                        c-0.4,1.4-1.5,1.7-2.8,0.8c-1-0.8-1.7-1.7-2.7-2.6c-1.2-1.1-2-1.1-3.2-0.1c-1.6,1.4-2.2,4.7-1.3,6.6c0.5,1,1.2,1.4,2.1,0.9
-                                        c0.6-0.3,1.3-0.8,1.8-1.3c0.7-0.6,1.4-0.9,2.2-0.2c1.3,1.3,2.8,1.2,4.4,0.8c2.4-0.5,4.3-2.9,4.3-5.6
-                                        C205.3,309.4,203.8,308.3,202.6,306.9z"></path>
-                                </g>
-                                <g>
-                                    <path d="M332.4,314.5c0-0.5-0.1-1-0.2-1.5c-0.2-1.2-1.5-2.5-2.4-2.6c-1.3-0.1-1.4,1.1-1.7,2.1c-0.4,1.4-1.3,1.9-2.4,1.9
-                                        c-1.7,0.1-3.3,0.1-5-0.2c-2.3-0.4-3-1.7-2.6-4.3c0.2-1.3,1-2,2-2.3s1.2,0.8,1.4,1.6c0.1,0.3,0.2,0.5,0.3,0.7
-                                        c0.5,0.7,1.7,0.6,1.9-0.3c0.4-1.9,0.7-3.7,1-5.6c0.2-1.3-0.7-1.9-1.6-2.3c-0.9-0.4-1.4,0.1-1.8,1c-0.5,1-2.7,1-2.9-0.1
-                                        c-0.3-1.4-0.4-2.9-0.3-4.4c0-1.1,0.7-1.6,1.7-1.6c2,0,4,0,6.1-0.1c1.1-0.1,1.6,0.5,2,1.5c0.2,0.6,0.6,1.2,0.9,1.7
-                                        c0.6,0.9,1.2,0.8,2,0c1.2-1.2,1.1-2.7,1.1-4.3c-0.1-1.9-1-3-2.7-3c-2,0.1-4.2,0.5-6.1,0.1c-3.2-0.7-6.3,0.1-9.4,0.5
-                                        c-0.6,0.1-1.2,0.3-1.7,0.6c-0.8,0.4-0.9,1.5-0.2,2.1c0.3,0.3,0.7,0.5,1,0.7c2,1.4,2.4,4.5,1,6.5c-1.6,2.3-1.7,1.9,0,4.3
-                                        c0.3,0.4,0.6,0.7,0.8,1.2c0.2,0.5,0.4,1.2,0.5,1.7c0.3,1.6-0.7,2.4-1.7,3.1c-0.9,0.6-1.2,1.5-0.8,2.5c0.2,0.6,0.9,1.2,1.5,1.4
-                                        c2,0.4,3.9,0.6,5.9,0.7c1.5,0.1,3,0,4.5-0.1v-0.1c1.8,0,3.6-0.2,5.4-0.1C332.1,317.9,332.4,317.4,332.4,314.5z"></path>
-                                    <path d="M357,314.5c0-0.5-0.1-1-0.2-1.5c-0.2-1.2-1.5-2.5-2.4-2.6c-1.3-0.1-1.4,1.1-1.7,2.1c-0.4,1.4-1.3,1.9-2.4,1.9
-                                        c-1.7,0.1-3.3,0.1-5-0.2c-2.3-0.4-3-1.7-2.6-4.3c0.2-1.3,1-2,2-2.3s1.2,0.8,1.4,1.6c0.1,0.3,0.2,0.5,0.3,0.7
-                                        c0.5,0.7,1.7,0.6,1.9-0.3c0.4-1.9,0.7-3.7,1-5.6c0.2-1.3-0.7-1.9-1.6-2.3c-0.9-0.4-1.4,0.1-1.8,1c-0.5,1-2.7,1-2.9-0.1
-                                        c-0.3-1.4-0.4-2.9-0.3-4.4c0-1.1,0.7-1.6,1.7-1.6c2,0,4,0,6.1-0.1c1.1-0.1,1.6,0.5,2,1.5c0.2,0.6,0.6,1.2,0.9,1.7
-                                        c0.6,0.9,1.2,0.8,2,0c1.2-1.2,1.1-2.7,1.1-4.3c-0.1-1.9-1-3-2.7-3c-2,0.1-4.2,0.5-6.1,0.1c-3.2-0.7-6.3,0.1-9.4,0.5
-                                        c-0.6,0.1-1.2,0.3-1.7,0.6c-0.8,0.4-0.9,1.5-0.2,2.1c0.3,0.3,0.7,0.5,1,0.7c2,1.4,2.4,4.5,1,6.5c-1.6,2.3-1.7,1.9,0,4.3
-                                        c0.3,0.4,0.6,0.7,0.8,1.2c0.2,0.5,0.4,1.2,0.5,1.7c0.3,1.6-0.7,2.4-1.7,3.1c-0.9,0.6-1.2,1.5-0.8,2.5c0.2,0.6,0.9,1.2,1.5,1.4
-                                        c2,0.4,3.9,0.6,5.9,0.7c1.5,0.1,3,0,4.5-0.1v-0.1c1.8,0,3.6-0.2,5.4-0.1C356.7,317.9,357.1,317.4,357,314.5z"></path>
-                                    <path d="M237.3,308.3c-0.1-0.1-0.3-0.3-0.5-0.3c-1-0.1-2.5,1.2-2.8,2.2c-0.9,3.4-3.1,4.5-5.6,4.7c-0.5,0.1-1.2-0.3-1.5-0.7
-                                        c-0.7-1.1-1.4-2.3-1.7-3.6c-0.2-0.6,0.6-1.5,0.9-2.4c0-0.1,0.1-0.1,0.1-0.1c0.7-1.5,0.5-2.3-0.7-3.4c-0.3-0.3-0.5-0.6-0.6-1
-                                        c-0.4-1.2,1.4-6,2.5-6.5c0.1-0.1,0.2-0.1,0.2-0.1c1.7,0,3.6-0.6,4.8,1.6c0.4,0.7,1.1,1.2,1.7,1.7c1,0.8,2.4,0.6,2.9-0.6
-                                        c1-2.5,1.5-5.2,0.2-7.7c-0.7-1.4-2.5-1.9-3.5-0.8c-1.2,1.3-2.4,1.4-3.9,1.2c-4.4-0.3-6.4,1.9-8,6.4c-0.7,2.1-1.5,4.2-2.2,6.1
-                                        c-2.1,2-1.4,3.9-0.3,5.9c0.1,0.1,0.1,0.3,0.2,0.5c1,1.8,1.7,3.9,3,5.4c2.7,3.3,8.5,3.2,11.2-0.1c0.7-0.8,1.3-1.2,2.3-0.6
-                                        c0.3,0.2,0.7,0.4,1,0.4c0.4,0,0.9-0.1,1.1-0.4c0.3-0.5,0.5-1,0.6-1.6C239.2,312.3,238.3,310.3,237.3,308.3z"></path>
-                                    <path d="M261.8,302.5c-1-1.7-2.1-3.4-3.1-5c-0.4-0.7-0.7-1.5-1.2-2.2c-1.5-2.3-3.4-3.5-6.1-2.9c-2.6,0.6-5.6,4.1-6.3,7.4
-                                        c-0.2,1-0.6,2.1-1.2,2.9c-1.2,1.4-1.1,2.8-0.6,4.4c0.6,1.8,1.2,3.7,1.9,5.4c0.5,1.4,1.3,2.6,1.9,3.9c1.4,0.6,2.7,1.3,3.9,1.7
-                                        c2.7,0.8,6.9-1.7,8-4.6c0.5-1.4,0.8-3,1.7-4.2c1.2-1.5,1.4-3.3,1.6-5.2C262.3,303.6,262.1,302.9,261.8,302.5z M254.4,312.7
-                                        c-1.7,1.2-3.9,0.6-5-1.2c-0.5-0.9-0.6-1.8,0-2.9c0.9-1.5,1.3-3.1,0.5-4.8c-1.1-2.5-0.8-4,1-6.1c1-1.2,1.7-1.3,2.9-0.2
-                                        c0.1-0.1,0.2-0.1,0.3-0.2c0.7,1.6,1.6,3.2,2.1,5c0.2,0.6-0.2,1.5-0.6,2.1c-0.7,1.1-0.6,2,0,3.1
-                                        C256.9,309.5,256.5,311.3,254.4,312.7z"></path>
-                                    <path d="M284,293.6c-3.2-0.4-6.4-1-9.6-1.2c-2.4-0.1-4.8,0.4-7.1,0.6c-1.2,0.1-1.3,1.2-1.6,2.1c-0.1,0.3,0.6,0.9,1,1.2
-                                        c1.6,1,2,2.9,2.8,4.5c0.1,0.1,0.1,0.5-0.1,0.6c-0.5,0.9-0.9,1.9-1.6,2.6c-1.1,1.1-0.7,2-0.1,3c0.3,0.5,0.6,1,1,1.5
-                                        c1.3,2.1,1.2,3.7-0.6,5.5c-0.2,0.1-0.3,0.3-0.5,0.5c-0.8,1-0.3,1.9,0.1,2.7c0.2,0.4,0.9,0.6,1.3,0.7c0.6,0.1,1.3,0.1,1.9,0.1
-                                        c1.4,0,2.8,0.1,4.2,0c0.9-0.1,1.2-0.8,0.8-1.8c-0.5-1.3-1-2.5-2.4-2.8c-1.3-0.4-1.3-1.5-1.1-2.6c0.1-0.5,0.3-1,0.3-1.1
-                                        c0.9-2.2,1.4-2.5,2.4-1.5c0.3,0.3,0.4,0.8,0.6,1.1c0.3,0.5,0.6,0.8,0.9,1.2c0.4-0.5,1.1-0.8,1.2-1.4c0.3-1.9,0.4-3.7,0.5-5.7
-                                        c0.1-1-0.5-1.7-1.4-1.9c-1-0.3-1.4,0.4-2,1c-0.9,1.2-2.2,1-2.9-0.5c-0.2-0.6-0.4-1.2-0.5-1.8c-0.2-1.3,1-3.9,1.8-3.9
-                                        c1.8-0.2,3.6-0.4,5.3-0.3c1.3,0,2.3,0.7,2.8,2.2c0.2,0.8,0.6,1.5,1.6,1.4c1-0.2,1.7-0.6,1.6-1.9c0-0.8,0.1-1.6,0.1-2.5
-                                        C285.2,294.2,284.9,293.7,284,293.6z"></path>
-                                    <path d="M307,293.6c-3.2-0.4-6.4-1-9.6-1.2c-2.4-0.1-4.8,0.4-7.1,0.6c-1.2,0.1-1.3,1.2-1.6,2.1c-0.1,0.3,0.6,0.9,1,1.2
-                                        c1.6,1,2,2.9,2.8,4.5c0.1,0.1,0.1,0.5-0.1,0.6c-0.5,0.9-0.9,1.9-1.6,2.6c-1.1,1.1-0.7,2-0.1,3c0.3,0.5,0.6,1,1,1.5
-                                        c1.3,2.1,1.2,3.7-0.6,5.5c-0.2,0.1-0.3,0.3-0.5,0.5c-0.8,1-0.3,1.9,0.1,2.7c0.2,0.4,0.9,0.6,1.3,0.7c0.6,0.1,1.3,0.1,1.9,0.1
-                                        c1.4,0,2.8,0.1,4.2,0c0.9-0.1,1.2-0.8,0.8-1.8c-0.5-1.3-1-2.5-2.4-2.8c-1.3-0.4-1.3-1.5-1.1-2.6c0.1-0.5,0.3-1,0.3-1.1
-                                        c0.9-2.2,1.4-2.5,2.4-1.5c0.3,0.3,0.4,0.8,0.6,1.1c0.3,0.5,0.6,0.8,0.9,1.2c0.4-0.5,1.1-0.8,1.2-1.4c0.3-1.9,0.4-3.7,0.5-5.7
-                                        c0.1-1-0.5-1.7-1.4-1.9c-1-0.3-1.4,0.4-2,1c-0.9,1.2-2.2,1-2.9-0.5c-0.2-0.6-0.4-1.2-0.5-1.8c-0.2-1.3,1-3.9,1.8-3.9
-                                        c1.8-0.2,3.6-0.4,5.3-0.3c1.3,0,2.3,0.7,2.8,2.2c0.2,0.8,0.6,1.5,1.6,1.4c1-0.2,1.7-0.6,1.6-1.9c0-0.8,0.1-1.6,0.1-2.5
-                                        C308.2,294.2,307.9,293.7,307,293.6z"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </h1>
-            <div class="center">
-                <div class="center-inner">
-                    <nav class="menu">
-                        <ul>
-                            <li class="menu-item"><a href="index.html">Home</a></li>
-                            <li class="menu-item"><a href="products.html">Shop</a></li>
-                            <li class="menu-item"><a href="#.html"></a>Subscription</li>
-                            <li class="menu-item"><a href="news.html"></a>News</li>
-                            <li class="menu-item"><a href="story.html"></a>Our Story</li>
-                            <li class="menu-item"><a href="contact.html"></a>Contact</li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
         </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </div> 
+
+    <footer id="footer" class="txt-center secondary-bg">
+            <div class="content footer-col p20 hidden">
+                <div class="footer-devil">
+                    <div class="footer-devil-image">
+                            <img src="assets/imgs/devil.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>Subsciption</li>
+                        <li><a href="news.html" class="primary-color">News</a></li>
+                        <li>Our Story</li>
+                        <li>Contact</li>
+                        <li>T&amp;C</li>
+                        <li>FAQ</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col ptb40 social-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g class="instgram social-fill">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </g>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g class="facebook social-fill">
+                                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                                </g>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g class="twitter social-fill">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </g>
+                            </svg>
+                        </li>
+                    </ul>
+            </div>
+            <div class="footer-col sub-footer p1020">
+                    &copy; 2018 Dark Arts
+            </div>
+    </footer>
+
+    <div id="hidden-nav">
+            <h1 id="logo-nav">
+                <svg id="logo-svg-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 319.5">
+                    <g id="logo-sml-nav">
+                        <g>
+                            <g>
+                                <path d="M21.2,305.9c-0.2-1.2-0.5-2.3-0.7-3.5c-0.9-4.6-3.3-7.6-7.5-9.2c-1.3,0-2.5-0.1-3.8,0.1c-2.9,0.3-5.8,1-8.1,3.2
+                                    c-1.6,1.4-1.4,2.2,0.2,3.4c1.8,1.4,1.8,1.4,1.3,3.7c-0.1,0.4-0.2,0.8-0.3,1.2c-0.8,1.7-0.7,3,0.7,4.3c0.9,0.8,0.6,2-0.3,2.7
+                                    c-0.4,0.3-0.8,0.6-1.2,1c-1.3,1.4-1.2,2.4,0.4,3c1.3,0.6,2.7,1,4.1,1.1c2.4,0.3,4.7,0.2,7,0.3c3.1,0.1,5.7-2,6.7-5.2
+                                    c0.2-0.7,0.5-1.4,0.8-1.9C21.3,308.7,21.6,307.4,21.2,305.9z M16.2,309.2c-0.8,2-2.3,2.9-4.2,2.8c-1.1,0-2.2-0.2-3.3-0.3
+                                    c-1.4-0.5-1.8-1.3-1.4-2.9c0.2-0.7,0.5-1.5,0.9-2.1c0.9-1.2,0.7-2.2-0.1-3.4c-0.3-0.5-0.6-1.4-0.5-2c0.2-1.5,1-2,2.6-2.1
+                                    C14.7,299.2,18.1,304.6,16.2,309.2z"></path>
+                                <path d="M47.8,313.6c-0.7-0.5-1.4-0.8-2.2-1.2c-1.9-1-2.4-3.4-0.9-5.1c0.6-0.6,0.6-1.2,0.1-1.7c-0.8-1-1.7-1.9-2.5-2.8
+                                    c-1.5-1.5-2.1-3.3-1.9-5.5c0.1-1,0.3-1.9,0.5-2.8c0.1-0.5,0-1-0.2-1.3c-2.8-2.8-5.8-2.8-8.6-0.1c-0.6,0.6-0.8,1-0.5,2
+                                    c1,3.2-0.3,6.6-3,8.2c-1.8,1-1.9,1.7-0.6,3.4c1,1.3,1.2,2.3,0.3,3.7c-0.7,1.2-1.6,2.1-2.5,3c-1.1,1.2-1,2.8,0.4,3.4
+                                    c0.9,0.3,1.9,0.3,2.8,0.2c1.1-0.1,2.1-0.6,3.2-1c1.4-0.5,1.7-1.5,0.8-2.7c-0.2-0.2-0.3-0.5-0.4-0.6c-0.8-1.4-0.3-2.7,0.2-3.9
+                                    c0.2-0.4,1.2-0.4,1.8-0.5c0.5-0.1,1,0,1.4,0c0-0.1,0-0.1,0-0.2c1.4,0.2,2.9,0.3,4.3,0.7c0.3,0.1,0.8,0.8,0.9,1.3
+                                    c0.3,1.6-0.3,2.8-1.6,3.8c-1.4,1.1-1.5,2-0.3,3.4c2.5,3,7.2,2.4,9-1C48.8,315.3,48.7,314.3,47.8,313.6z M36.5,304.5
+                                    c-2.1,0-2.5-0.6-2.1-2.8c0.1-0.6,0.1-1.2,0.4-1.7c0.3-0.4,0.8-0.8,1.3-0.8c0.3,0,0.7,0.6,0.9,1c0.3,0.8,0.5,1.6,0.8,2.4
+                                    C38.2,304.2,38.1,304.5,36.5,304.5z"></path>
+                                <path d="M71.1,313.6c-1.3,0.1-2-0.6-2.4-1.9c-0.1-0.5-0.4-0.9-0.7-1.3c-1.4-1.9-1.1-3.7-0.1-5.7c0.2-0.4,0.3-0.8,0.6-1.2
+                                    c1.2-1.7,1.3-3.7,0.6-5.7c-0.1-0.2-0.1-0.5-0.2-0.6c-0.4-1.3-0.6-2.9-1.9-3.3c-2.1-0.6-4.3-1.2-6.5-1.4c-1.9-0.1-3.8,0.5-5.6,0.6
+                                    c-1.2,0.1-1.9,0.9-2.5,1.9c-0.8,1.5-0.6,2.3,1,2.7c0.9,0.2,1.3,0.8,1.5,1.8c0.4,2.1-0.7,3.2-1.7,4.6c-1.1,1.5-1,2.2,0.5,2.9
+                                    c1.6,0.7,2.1,2,2,3.6c-0.1,1-0.5,2-0.7,3c-0.2,0.8-0.5,1.7-0.2,2.4c0.3,0.8,1.1,1.4,2.1,1.1c0.7-0.2,1.4-0.1,2.1-0.2
+                                    c1.5-0.1,2.4-2.1,1.7-3.6c-0.3-0.8-1-1.5-1.1-2.3c-0.1-1.2-0.1-2.5,0.3-3.4c0.6-1,2.1-0.5,3.1,0.7c0.5,0.5,0.8,1.1,1.3,1.6
+                                    c1,1.2,1.2,2.5,0.6,4.1c-0.7,1.9-0.2,3,1.6,3.4c1.4,0.3,2.9,0.3,4.3,0.3c1.3,0.1,1.8-0.5,1.9-1.8
+                                    C72.9,314.8,72.2,313.5,71.1,313.6z M65.5,300.9c-0.3,1.3-1.2,1.9-2.4,1.8c-1.2,0-2.2,0.1-3.4,0.1c-0.9,0.1-1.3-0.3-1.3-1.3
+                                    c0-0.5-0.1-0.9-0.1-1.4c-0.2-1.9,0.6-3.1,2.3-3.6c1.4-0.3,2.7-0.2,3.9,0.9C65.6,298.3,65.9,299.5,65.5,300.9z"></path>
+                                <path d="M98.1,313.1c-1.8-0.1-2.4-1.3-2.9-3c-0.5-1.7-1.6-3.2-2.4-4.9c-0.3-0.6-0.6-1.9-0.3-2.2c1.3-1.5,2.1-3.7,4.3-4.1
+                                    c1.2-0.3,1.6-1.7,0.8-2.6c-1.1-1.4-5.8-2.3-7.3-1.5c-0.2,0.1-0.5,0.2-0.5,0.4c-0.2,0.4-0.4,1-0.3,1.3c1,2.1,1,2.1-0.6,3.7
+                                    c-0.4,0.4-0.8,0.8-1.4,1.4c-0.3,0.2-0.7,0.5-1.3,0.8c-1.2,0.6-2.2,0.1-2.4-1.4c-0.1-1,0.1-2.1,0.5-2.9c1-1.9,0.7-3.5-1.3-4.1
+                                    c-1.3-0.4-2.7-0.7-4-1c-0.9-0.2-1.7,0.5-1.5,1.5c0.1,0.7,0.6,1.4,1,2c0.3,0.6,1,1,1.1,1.7c1.2,4.7,1.3,9.5,0.8,14.3
+                                    c-0.1,0.5-0.2,1-0.5,1.2c-0.7,0.6-1,1.4-0.6,2.3c0.4,0.7,1.1,1.5,1.7,1.6c1.8,0.4,3.6,0.1,5.3-1c1.8-1.2,1.8-2.4,0.1-3.7
+                                    c-0.2-0.1-0.4-0.3-0.6-0.5c-1.4-1.1-1.6-2.6-0.5-4c0.7-0.9,1.6-1.6,2.5-2.4c0.6-0.5,0.9-0.4,1.3,0.4c0.7,1.7,1.7,3.4,2.4,5
+                                    c0.2,0.5,0.3,1.2,0.2,1.8c-0.2,1.6,0.1,2.8,1.5,3.3c1.3,0.5,2.8,0.6,4.2,0.7c1.2,0.1,1.8-0.6,2-1.9
+                                    C99.8,313.8,99,313.1,98.1,313.1z"></path>
+                            </g>
+                            <g>
+                                <path d="M135.9,313.6c-0.7-0.5-1.4-0.8-2.2-1.2c-1.9-1-2.4-3.4-0.9-5.1c0.6-0.6,0.6-1.2,0.1-1.7c-0.8-1-1.7-1.9-2.5-2.8
+                                    c-1.5-1.5-2.1-3.3-1.9-5.5c0.1-1,0.3-1.9,0.5-2.8c0.1-0.5,0-1-0.2-1.3c-2.8-2.8-5.8-2.8-8.6-0.1c-0.6,0.6-0.8,1-0.5,2
+                                    c1,3.2-0.3,6.6-3,8.2c-1.8,1-1.9,1.7-0.6,3.4c1,1.3,1.2,2.3,0.3,3.7c-0.7,1.2-1.6,2.1-2.5,3c-1.1,1.2-1,2.8,0.4,3.4
+                                    c0.9,0.3,1.9,0.3,2.8,0.2c1.1-0.1,2.1-0.6,3.2-1c1.4-0.5,1.7-1.5,0.8-2.7c-0.2-0.2-0.3-0.5-0.4-0.6c-0.8-1.4-0.3-2.7,0.2-3.9
+                                    c0.2-0.4,1.2-0.4,1.8-0.5c0.5-0.1,1,0,1.4,0c0-0.1,0-0.1,0-0.2c1.4,0.2,2.9,0.3,4.3,0.7c0.3,0.1,0.8,0.8,0.9,1.3
+                                    c0.3,1.6-0.3,2.8-1.6,3.8c-1.4,1.1-1.5,2-0.3,3.4c2.5,3,7.2,2.4,9.1-1C136.9,315.3,136.8,314.3,135.9,313.6z M124.6,304.5
+                                    c-2.1,0-2.5-0.6-2.1-2.8c0.1-0.6,0.1-1.2,0.4-1.7c0.3-0.4,0.8-0.8,1.3-0.8c0.3,0,0.7,0.6,0.9,1c0.3,0.8,0.5,1.6,0.8,2.4
+                                    C126.4,304.2,126.2,304.5,124.6,304.5z"></path>
+                                <path d="M158.7,313.6c-1.3,0.1-2-0.6-2.4-1.9c-0.1-0.5-0.4-0.9-0.7-1.3c-1.4-1.9-1.1-3.7-0.1-5.7c0.2-0.4,0.3-0.8,0.6-1.2
+                                    c1.2-1.7,1.3-3.7,0.6-5.7c-0.1-0.2-0.1-0.5-0.2-0.6c-0.4-1.3-0.6-2.9-1.9-3.3c-2.1-0.6-4.3-1.2-6.5-1.4c-1.9-0.1-3.8,0.5-5.6,0.6
+                                    c-1.2,0.1-1.9,0.9-2.5,1.9c-0.8,1.5-0.6,2.3,1,2.7c0.9,0.2,1.3,0.8,1.5,1.8c0.4,2.1-0.7,3.2-1.7,4.6c-1.1,1.5-1,2.2,0.5,2.9
+                                    c1.6,0.7,2.1,2,2,3.6c-0.1,1-0.5,2-0.7,3c-0.2,0.8-0.5,1.7-0.2,2.4c0.3,0.8,1.1,1.4,2.1,1.1c0.7-0.2,1.4-0.1,2.1-0.2
+                                    c1.5-0.1,2.4-2.1,1.7-3.6c-0.3-0.8-1-1.5-1.1-2.3c-0.1-1.2-0.1-2.5,0.3-3.4c0.6-1,2.1-0.5,3.1,0.7c0.5,0.5,0.8,1.1,1.3,1.6
+                                    c1,1.2,1.2,2.5,0.6,4.1c-0.7,1.9-0.2,3,1.6,3.4c1.4,0.3,2.9,0.3,4.3,0.3c1.3,0.1,1.8-0.5,1.9-1.8
+                                    C160.5,314.8,159.8,313.5,158.7,313.6z M153.1,300.9c-0.3,1.3-1.2,1.9-2.4,1.8c-1.2,0-2.2,0.1-3.4,0.1c-0.9,0.1-1.3-0.3-1.3-1.3
+                                    c0-0.5-0.1-0.9-0.1-1.4c-0.2-1.9,0.6-3.1,2.3-3.6c1.4-0.3,2.7-0.2,3.9,0.9C153.2,298.3,153.5,299.5,153.1,300.9z"></path>
+                                <path d="M185.9,295.8c-0.1-0.1-0.1-0.3-0.2-0.3c-1.3-1-2.5-2.1-4.4-1.9c-5.1,0.5-10.3,1.9-15.4,0c-2-0.7-3.1,0.7-4.2,2.7
+                                    c-0.9,1.7,0.2,3,1.1,4.3c0.8,1,1.4,1,2.2,0.1c0.6-0.6,1.2-1.3,1.8-1.8c1-0.8,3.5-0.5,4.1,0.5c0.6,0.9,1,2.8-0.1,4.1
+                                    c-1.1,1.4-0.9,1.9,0.1,3.2c0.2,0.3,0.5,0.6,0.7,1c0.6,1,0.7,1.9-0.2,2.8c-0.7,0.7-1.3,1.7-1.7,2.8c-0.2,0.4-0.1,1.2,0.1,1.5
+                                    c1.1,1.8,2.8,2.3,4.7,2.3c1.5-0.3,2.7-0.9,3.4-2.5c0.3-0.7,0.2-1.2-0.3-1.7c-2.5-2.6-2.5-2.6-0.5-5.6c0.5-0.8,0.6-1.4,0.2-2.3
+                                    c-0.4-1-0.6-2-0.8-3c-0.2-1.4,0.6-2.1,1.4-2.7c0.9-0.5,1.6-0.1,2.2,0.8c0.3,0.5,0.7,1,1.2,1.4c0.8,0.7,1.7,1,2.7,0.3
+                                    C185.4,300.8,186.4,297.2,185.9,295.8z"></path>
+                                <path d="M202.6,306.9c-0.6-0.6-1.4-1.5-1.4-2.3c0.1-1.9-1-2.4-2.2-2.7c-0.6-0.2-1.3-0.4-1.9-0.5c-1-0.1-1.7-0.6-2.1-1.8
+                                    c0.1-0.6-0.1-1.6,0.2-1.9c0.7-0.6,1.6-1.2,2.5-0.2c0.3,0.3,0.6,0.5,0.9,0.7c1.4,0.9,3.2,1,4.2-0.3c0.8-1.2,1-3,1.5-4.5
+                                    c0.1-0.1-0.1-0.3-0.2-0.5c-1-1-2.9-1-3.9-0.1c-0.8,0.7-1.6,1-2.6,0.5c-0.8-0.4-1.7-0.8-2.5-0.7c-3.7,0.6-6.4,4.9-3.5,9
+                                    c0.7,1,1.3,2.3,1.5,3.5c0.4,2.1,0.2,2.1,2.1,2.6c0.5,0.1,1.1,0.2,1.7,0.2c1.6,0.1,2.8,1,3.5,2.6c0.2,0.5,0.3,1.3,0.1,1.8
+                                    c-0.4,1.4-1.5,1.7-2.8,0.8c-1-0.8-1.7-1.7-2.7-2.6c-1.2-1.1-2-1.1-3.2-0.1c-1.6,1.4-2.2,4.7-1.3,6.6c0.5,1,1.2,1.4,2.1,0.9
+                                    c0.6-0.3,1.3-0.8,1.8-1.3c0.7-0.6,1.4-0.9,2.2-0.2c1.3,1.3,2.8,1.2,4.4,0.8c2.4-0.5,4.3-2.9,4.3-5.6
+                                    C205.3,309.4,203.8,308.3,202.6,306.9z"></path>
+                            </g>
+                            <g>
+                                <path d="M332.4,314.5c0-0.5-0.1-1-0.2-1.5c-0.2-1.2-1.5-2.5-2.4-2.6c-1.3-0.1-1.4,1.1-1.7,2.1c-0.4,1.4-1.3,1.9-2.4,1.9
+                                    c-1.7,0.1-3.3,0.1-5-0.2c-2.3-0.4-3-1.7-2.6-4.3c0.2-1.3,1-2,2-2.3s1.2,0.8,1.4,1.6c0.1,0.3,0.2,0.5,0.3,0.7
+                                    c0.5,0.7,1.7,0.6,1.9-0.3c0.4-1.9,0.7-3.7,1-5.6c0.2-1.3-0.7-1.9-1.6-2.3c-0.9-0.4-1.4,0.1-1.8,1c-0.5,1-2.7,1-2.9-0.1
+                                    c-0.3-1.4-0.4-2.9-0.3-4.4c0-1.1,0.7-1.6,1.7-1.6c2,0,4,0,6.1-0.1c1.1-0.1,1.6,0.5,2,1.5c0.2,0.6,0.6,1.2,0.9,1.7
+                                    c0.6,0.9,1.2,0.8,2,0c1.2-1.2,1.1-2.7,1.1-4.3c-0.1-1.9-1-3-2.7-3c-2,0.1-4.2,0.5-6.1,0.1c-3.2-0.7-6.3,0.1-9.4,0.5
+                                    c-0.6,0.1-1.2,0.3-1.7,0.6c-0.8,0.4-0.9,1.5-0.2,2.1c0.3,0.3,0.7,0.5,1,0.7c2,1.4,2.4,4.5,1,6.5c-1.6,2.3-1.7,1.9,0,4.3
+                                    c0.3,0.4,0.6,0.7,0.8,1.2c0.2,0.5,0.4,1.2,0.5,1.7c0.3,1.6-0.7,2.4-1.7,3.1c-0.9,0.6-1.2,1.5-0.8,2.5c0.2,0.6,0.9,1.2,1.5,1.4
+                                    c2,0.4,3.9,0.6,5.9,0.7c1.5,0.1,3,0,4.5-0.1v-0.1c1.8,0,3.6-0.2,5.4-0.1C332.1,317.9,332.4,317.4,332.4,314.5z"></path>
+                                <path d="M357,314.5c0-0.5-0.1-1-0.2-1.5c-0.2-1.2-1.5-2.5-2.4-2.6c-1.3-0.1-1.4,1.1-1.7,2.1c-0.4,1.4-1.3,1.9-2.4,1.9
+                                    c-1.7,0.1-3.3,0.1-5-0.2c-2.3-0.4-3-1.7-2.6-4.3c0.2-1.3,1-2,2-2.3s1.2,0.8,1.4,1.6c0.1,0.3,0.2,0.5,0.3,0.7
+                                    c0.5,0.7,1.7,0.6,1.9-0.3c0.4-1.9,0.7-3.7,1-5.6c0.2-1.3-0.7-1.9-1.6-2.3c-0.9-0.4-1.4,0.1-1.8,1c-0.5,1-2.7,1-2.9-0.1
+                                    c-0.3-1.4-0.4-2.9-0.3-4.4c0-1.1,0.7-1.6,1.7-1.6c2,0,4,0,6.1-0.1c1.1-0.1,1.6,0.5,2,1.5c0.2,0.6,0.6,1.2,0.9,1.7
+                                    c0.6,0.9,1.2,0.8,2,0c1.2-1.2,1.1-2.7,1.1-4.3c-0.1-1.9-1-3-2.7-3c-2,0.1-4.2,0.5-6.1,0.1c-3.2-0.7-6.3,0.1-9.4,0.5
+                                    c-0.6,0.1-1.2,0.3-1.7,0.6c-0.8,0.4-0.9,1.5-0.2,2.1c0.3,0.3,0.7,0.5,1,0.7c2,1.4,2.4,4.5,1,6.5c-1.6,2.3-1.7,1.9,0,4.3
+                                    c0.3,0.4,0.6,0.7,0.8,1.2c0.2,0.5,0.4,1.2,0.5,1.7c0.3,1.6-0.7,2.4-1.7,3.1c-0.9,0.6-1.2,1.5-0.8,2.5c0.2,0.6,0.9,1.2,1.5,1.4
+                                    c2,0.4,3.9,0.6,5.9,0.7c1.5,0.1,3,0,4.5-0.1v-0.1c1.8,0,3.6-0.2,5.4-0.1C356.7,317.9,357.1,317.4,357,314.5z"></path>
+                                <path d="M237.3,308.3c-0.1-0.1-0.3-0.3-0.5-0.3c-1-0.1-2.5,1.2-2.8,2.2c-0.9,3.4-3.1,4.5-5.6,4.7c-0.5,0.1-1.2-0.3-1.5-0.7
+                                    c-0.7-1.1-1.4-2.3-1.7-3.6c-0.2-0.6,0.6-1.5,0.9-2.4c0-0.1,0.1-0.1,0.1-0.1c0.7-1.5,0.5-2.3-0.7-3.4c-0.3-0.3-0.5-0.6-0.6-1
+                                    c-0.4-1.2,1.4-6,2.5-6.5c0.1-0.1,0.2-0.1,0.2-0.1c1.7,0,3.6-0.6,4.8,1.6c0.4,0.7,1.1,1.2,1.7,1.7c1,0.8,2.4,0.6,2.9-0.6
+                                    c1-2.5,1.5-5.2,0.2-7.7c-0.7-1.4-2.5-1.9-3.5-0.8c-1.2,1.3-2.4,1.4-3.9,1.2c-4.4-0.3-6.4,1.9-8,6.4c-0.7,2.1-1.5,4.2-2.2,6.1
+                                    c-2.1,2-1.4,3.9-0.3,5.9c0.1,0.1,0.1,0.3,0.2,0.5c1,1.8,1.7,3.9,3,5.4c2.7,3.3,8.5,3.2,11.2-0.1c0.7-0.8,1.3-1.2,2.3-0.6
+                                    c0.3,0.2,0.7,0.4,1,0.4c0.4,0,0.9-0.1,1.1-0.4c0.3-0.5,0.5-1,0.6-1.6C239.2,312.3,238.3,310.3,237.3,308.3z"></path>
+                                <path d="M261.8,302.5c-1-1.7-2.1-3.4-3.1-5c-0.4-0.7-0.7-1.5-1.2-2.2c-1.5-2.3-3.4-3.5-6.1-2.9c-2.6,0.6-5.6,4.1-6.3,7.4
+                                    c-0.2,1-0.6,2.1-1.2,2.9c-1.2,1.4-1.1,2.8-0.6,4.4c0.6,1.8,1.2,3.7,1.9,5.4c0.5,1.4,1.3,2.6,1.9,3.9c1.4,0.6,2.7,1.3,3.9,1.7
+                                    c2.7,0.8,6.9-1.7,8-4.6c0.5-1.4,0.8-3,1.7-4.2c1.2-1.5,1.4-3.3,1.6-5.2C262.3,303.6,262.1,302.9,261.8,302.5z M254.4,312.7
+                                    c-1.7,1.2-3.9,0.6-5-1.2c-0.5-0.9-0.6-1.8,0-2.9c0.9-1.5,1.3-3.1,0.5-4.8c-1.1-2.5-0.8-4,1-6.1c1-1.2,1.7-1.3,2.9-0.2
+                                    c0.1-0.1,0.2-0.1,0.3-0.2c0.7,1.6,1.6,3.2,2.1,5c0.2,0.6-0.2,1.5-0.6,2.1c-0.7,1.1-0.6,2,0,3.1
+                                    C256.9,309.5,256.5,311.3,254.4,312.7z"></path>
+                                <path d="M284,293.6c-3.2-0.4-6.4-1-9.6-1.2c-2.4-0.1-4.8,0.4-7.1,0.6c-1.2,0.1-1.3,1.2-1.6,2.1c-0.1,0.3,0.6,0.9,1,1.2
+                                    c1.6,1,2,2.9,2.8,4.5c0.1,0.1,0.1,0.5-0.1,0.6c-0.5,0.9-0.9,1.9-1.6,2.6c-1.1,1.1-0.7,2-0.1,3c0.3,0.5,0.6,1,1,1.5
+                                    c1.3,2.1,1.2,3.7-0.6,5.5c-0.2,0.1-0.3,0.3-0.5,0.5c-0.8,1-0.3,1.9,0.1,2.7c0.2,0.4,0.9,0.6,1.3,0.7c0.6,0.1,1.3,0.1,1.9,0.1
+                                    c1.4,0,2.8,0.1,4.2,0c0.9-0.1,1.2-0.8,0.8-1.8c-0.5-1.3-1-2.5-2.4-2.8c-1.3-0.4-1.3-1.5-1.1-2.6c0.1-0.5,0.3-1,0.3-1.1
+                                    c0.9-2.2,1.4-2.5,2.4-1.5c0.3,0.3,0.4,0.8,0.6,1.1c0.3,0.5,0.6,0.8,0.9,1.2c0.4-0.5,1.1-0.8,1.2-1.4c0.3-1.9,0.4-3.7,0.5-5.7
+                                    c0.1-1-0.5-1.7-1.4-1.9c-1-0.3-1.4,0.4-2,1c-0.9,1.2-2.2,1-2.9-0.5c-0.2-0.6-0.4-1.2-0.5-1.8c-0.2-1.3,1-3.9,1.8-3.9
+                                    c1.8-0.2,3.6-0.4,5.3-0.3c1.3,0,2.3,0.7,2.8,2.2c0.2,0.8,0.6,1.5,1.6,1.4c1-0.2,1.7-0.6,1.6-1.9c0-0.8,0.1-1.6,0.1-2.5
+                                    C285.2,294.2,284.9,293.7,284,293.6z"></path>
+                                <path d="M307,293.6c-3.2-0.4-6.4-1-9.6-1.2c-2.4-0.1-4.8,0.4-7.1,0.6c-1.2,0.1-1.3,1.2-1.6,2.1c-0.1,0.3,0.6,0.9,1,1.2
+                                    c1.6,1,2,2.9,2.8,4.5c0.1,0.1,0.1,0.5-0.1,0.6c-0.5,0.9-0.9,1.9-1.6,2.6c-1.1,1.1-0.7,2-0.1,3c0.3,0.5,0.6,1,1,1.5
+                                    c1.3,2.1,1.2,3.7-0.6,5.5c-0.2,0.1-0.3,0.3-0.5,0.5c-0.8,1-0.3,1.9,0.1,2.7c0.2,0.4,0.9,0.6,1.3,0.7c0.6,0.1,1.3,0.1,1.9,0.1
+                                    c1.4,0,2.8,0.1,4.2,0c0.9-0.1,1.2-0.8,0.8-1.8c-0.5-1.3-1-2.5-2.4-2.8c-1.3-0.4-1.3-1.5-1.1-2.6c0.1-0.5,0.3-1,0.3-1.1
+                                    c0.9-2.2,1.4-2.5,2.4-1.5c0.3,0.3,0.4,0.8,0.6,1.1c0.3,0.5,0.6,0.8,0.9,1.2c0.4-0.5,1.1-0.8,1.2-1.4c0.3-1.9,0.4-3.7,0.5-5.7
+                                    c0.1-1-0.5-1.7-1.4-1.9c-1-0.3-1.4,0.4-2,1c-0.9,1.2-2.2,1-2.9-0.5c-0.2-0.6-0.4-1.2-0.5-1.8c-0.2-1.3,1-3.9,1.8-3.9
+                                    c1.8-0.2,3.6-0.4,5.3-0.3c1.3,0,2.3,0.7,2.8,2.2c0.2,0.8,0.6,1.5,1.6,1.4c1-0.2,1.7-0.6,1.6-1.9c0-0.8,0.1-1.6,0.1-2.5
+                                    C308.2,294.2,307.9,293.7,307,293.6z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </h1>
+        <div class="center">
+            <div class="center-inner">
+                <nav class="menu">
+                    <ul>
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="products.html">Shop</a></li>
+                        <li class="menu-item"><a href="#.html"></a>Subscription</li>
+                        <li class="menu-item"><a href="news.html"></a>News</li>
+                        <li class="menu-item"><a href="story.html"></a>Our Story</li>
+                        <li class="menu-item"><a href="contact.html"></a>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/helpers.min.js"></script>
 </body>

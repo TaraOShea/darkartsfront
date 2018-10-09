@@ -1,6 +1,6 @@
 gs.flick = function() {
-    console.log("flick");
     if($('.flick-images').length > 0){
+        console.log("flick");
         gs.carousel = $('.flick-images').flickity({
             cellSelector: '.flick-image', 
             contain: true,

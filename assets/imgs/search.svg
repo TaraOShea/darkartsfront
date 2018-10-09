@@ -1,0 +1,15 @@
+<svg version="1.1"
+	 id="search_icon" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="203.385px"
+	 height="203.363px" viewBox="52.808 21.819 203.385 203.363" enable-background="new 52.808 21.819 203.385 203.363"
+	 xml:space="preserve">
+	<g transform="translate(0,-952.36218)">
+		<g transform="translate(8.9950798,961.32626)">
+			<path d="M128.172,12.855c-46.397,0-84.359,37.874-84.359,84.271s37.962,84.359,84.359,84.359c17.839,0,34.358-5.712,47.979-15.202
+				l45.606,45.519c5.8,5.888,15.29,5.888,21.089,0c5.801-5.8,5.801-15.202,0-21.002l-45.605-45.606
+				c9.578-13.708,15.201-30.229,15.201-48.067C212.442,50.728,174.481,12.855,128.172,12.855z M128.172,42.556
+				c30.229,0,54.481,24.253,54.481,54.57c0,30.317-24.253,54.57-54.481,54.57c-30.317,0-54.57-24.253-54.57-54.57
+				C73.602,66.809,97.855,42.556,128.172,42.556z"/>
+		</g>
+	</g>
+</svg>

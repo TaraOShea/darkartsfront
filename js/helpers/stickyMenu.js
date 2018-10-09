@@ -48,6 +48,6 @@ gs.stickyMenu = function() {
             gs.header.classList.remove('alt');
         }
     } else {
-        console.log("here");
+        // console.log("here");
     }
 }

@@ -44,11 +44,12 @@
     <!-- SITE CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css?_cacheOverride=1530702435512">
+
     <!--[if lt IE 9]>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body class="template-product">
+<body>
         <header id="header" class="alt">
                 <div class="content txt-center txt-upper">
                     <h1 id="logo">
@@ -616,141 +617,127 @@
                 </div>
         </header>
     <div id="content" class="margin-top">
-        <div class="block">
-            <div class="content hidden">
-                <div class="sub-title txt-center secondary-bg-before">
-                    <h2 class="notch-title">Shop</h2>
-                </div>
-                <div class="sub-menu txt-center">
-                    <ul>
-                        <li><a href="products.html">All Products</a></li>
-                        <li><a href="products.html">Coffee</a></li>
-                        <li><a href="products.html">Clothing</a></li>
-                        <li><a href="products.html">Gifts</a></li>
-                        <li><a href="products.html">Sale</a></li>
-                    </ul>
-                </div>
-                <div class="products">
-                    <div class="product-images flick-images">
-                        <div class="product-image flick-image">
-                            <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
+
+        <div class="block hidden">
+            <div class="content txt-center">
+                <div class="sub-title secondary-bg-before">
+                    <h2 class="notch-title">Contact Us</h2>
+                </div>   
+
+                <div class="txt-center secondary-color sub-txt">
+                    <p>Got a question? We are happy to help you. Please contact us using the form below.</p>
+                </div> 
+
+                <div class="form secondary-color">
+                    <form>
+                        <div class="form-input">
+                            <label for="">Name<span>*</span></label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
                         </div>
-                        <div class="product-image flick-image">
-                            <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
+                        <div class="form-input">
+                            <label for="">Email<span>*</span></label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
+                        </div>
+                        <div class="form-input">
+                            <label for="">Phone Number<span>*</span></label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
+                        </div>
+                        <div class="form-txtbox">
+                            <label for="ContactForm-message">Message<span aria-hidden="true">*</span></label>
+                            <textarea rows="10" id="ContactForm-message" name="contact[body]"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" class="btn submit-btn" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="block hidden ptb40 location">
+            <div class="content txt-center">
+                <div class="sub-title secondary-bg-before">
+                    <h2 class="notch-title">Locations</h2>
+                </div>
+                <div class="col50">
+                    <div id="map_container">
+                        <div class="map" data-long="51.5473378" data-lat="-0.0507075"></div>
+                    </div>
+                    <div class="map-details">
+                        <h3 class="secondary-color mb20">LONDON</h3>
+                        <div class="address mb20">
+                                Arch 216, 27A Ponsford St, London E9 6JU<br>
+                                020 3774 0131<br>
+                        </div>
+                        <div class="open-times">
+                            <span>Thursday</span>10am – 4:30pm<br>
+                            <span>Friday</span> 10am – 4:30pm<br>
+                            <span>Saturday</span> 10am – 4:30pm<br>
+                            <span>Sunday</span> 10am – 4:30pm<br>
                         </div>
                     </div>
-                    <div class="product-content">
-                        <div class="product-content-inner pl40">
-                            <h2 class="product-title">RUBY RIDGE</h2>
-                            <div class="product-sub">Colombia, La Piramide</div>
-                            <div class="product-title product-price mtb15">£6.66</div>
-                            <div class="product-varients">
-                                <div class="product-varient">
-                                    <label for="grind">Grind</label>
-                                    <select name"grind" class="product-form__item">
-                                        <option id="m-option">Whole Bean</option>
-                                        <option id="l-option">Whole Bean</option>
-                                    </select>
-                                </div>
-                                <div class="product-varient">
-                                    <label for="grind">Size</label>
-                                    <select name"size" class="product-form__item">
-                                        <option id="250-option">250g</option>
-                                        <option id="500-option">500g</option>
-                                    </select>
-                                </div>
-                                <div class="product-varient">
-                                    <label for="grind">Quantity</label>
-                                    <input type="number" placeholder="1" step="1" />                                </div>
-                            </div>
-                            <button class="buy-btn btn--clear btn-full">
-                                <span>Add to cart</span>
-                            </button>
-                            <div class="ptb20">
-                                <p>
-                                    Colombia, La Piramide<br>
-                                    Variety: Caturra, Typica<br>
-                                    Process: Washed<br>
-                                    Altitude: 1700 - 2000 masl
-                                </p>
-                                <p>−</p>
-                                <p>Inzá is a municipality located in a sacred valley that sits below the elevated mountains that separate Huila and Cauca. More than 14 centuries of history and tradition of native indigeneous tribes make Inzá ones of Colombia’s richest in arqueological treasures, being home to the archeological park of Tierradentro. Lovely caramel sweetness, marshmallow mouthfeel, with notes of apple and pear</p>
-                            </div>
+                </div>
+                <div class="col50">
+                    <div id="map_container">
+                        <div class="map" data-long="51.5473378" data-lat="-0.0507075"></div>
+                    </div>
+                    <div class="map-details">
+                        <h3 class="secondary-color mb20">Tokyo</h3>
+                        <div class="address mb20">
+                                Arch 216, 27A Ponsford St, London E9 6JU<br>
+                                020 3774 0131<br>
+                        </div>
+                        <div class="open-times">
+                            <span>Thursday</span>10am – 4:30pm<br>
+                            <span>Friday</span> 10am – 4:30pm<br>
+                            <span>Saturday</span> 10am – 4:30pm<br>
+                            <span>Sunday</span> 10am – 4:30pm<br>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="block txt-center qoute-block p40">
-            <div class="content500">
-                <div class="center">
-                    <div class="center-inner">
-                        Want coffee sent to you every month?
-                        Why not buy a subscription
-                        <div class="pt20">
-                            <a class="link secondary-bg-before">Buy now</a>
+
+        <div class="block hidden ptb40">
+            <div class="content txt-center">
+                <div class="sub-title secondary-bg-before">
+                    <h2 class="notch-title">Wholesale</h2>
+                </div>   
+
+                <div class="txt-center secondary-color sub-txt">
+                    <p>Have a business? Want to stock our products? We would love to hear from you.</p>
+                </div> 
+
+                <div class="form secondary-color">
+                    <form>
+                        <div class="form-input">
+                            <label for="">Name<span>*</span></label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="block ptb40">
-            <div class="content hidden">
-                <div class="sub-title txt-center secondary-bg-before">
-                    <h2 class="notch-title">Related Products</h2>
-                </div>
-                <div class="product-grid-four">
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="product txt-center">
-                        <a href="product.html">
-                            <div class="product-inner">
-                                <div class="product-image">
-                                    <img src="assets/imgs/coffee.png" class="blur-up lazyload"/>
-                                </div>
-                                <h3 class="product-title">This is a title</h3>
-                                <div class="product-price">From £6.66</div>
-                            </div>
-                        </a>
-                    </div>
+                        <div class="form-input">
+                            <label for="">Company</label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
+                        </div>
+                        <div class="form-input">
+                            <label for="">Email<span>*</span></label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
+                        </div>
+                        <div class="form-input">
+                            <label for="">Phone Number<span>*</span></label>
+                            <input type="text" id="name" name="contact[name]" autocorrect="off" autocomplete="off" aria-required="true" value="">
+                        </div>
+                        <div class="form-txtbox">
+                            <label for="ContactForm-message">Message<span aria-hidden="true">*</span></label>
+                            <textarea rows="10" id="ContactForm-message" name="contact[body]"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" class="btn submit-btn" value="Send">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
-    
-
     <footer id="footer" class="txt-center secondary-bg">
             <div class="content footer-col p20 hidden">
                 <div class="footer-devil">
@@ -803,7 +790,6 @@
                     &copy; 2018 Dark Arts
             </div>
     </footer>
-
     <div id="hidden-nav">
             <h1 id="logo-nav">
                 <svg id="logo-svg-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 319.5">
@@ -939,8 +925,11 @@
     </div>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https:////cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.6/lazysizes.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyBQdch5IcgcQaKNG76sbMQv1MEBEKLeQ-8&language=en"></script>
+    <!-- <script src="https://maps.googleapis.com/maps-api-v3/api/js/33/10a/marker.js"></script> -->
     <script src="js/main.min.js"></script>
     <script src="js/helpers.min.js"></script>
 </body>
